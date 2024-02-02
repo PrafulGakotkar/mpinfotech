@@ -1,6 +1,6 @@
 import React from "react";
 import ArticleLayout from "./ArticleLayout";
-import imgOne from "../../../public/assets/img/blog/details/me.png";
+import imgOne from "../../../public/assets/img/product/Data-Protection.png";
 import Image from "next/image";
 import Link from "next/link";
 import thumbOne from "../../../public/assets/img/blog/details/banner.jpg";
@@ -13,42 +13,42 @@ const BlogSection = () => {
       <section className="blog-area pt-120 pb-80">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-6">
               <ArticleLayout />
             </div>
 
-            <div className="col-lg-4">
+            <div className="col-lg-6">
+
               <div className="widget mb-40">
                 <div className="widget-title-box mb-30">
                   <span className="animate-border"></span>
-                  <h3 className="widget-title">Search Objects</h3>
+                  <h3 >MRADAR ® a multi-cloud Security & Governance Platform</h3> {/*className="widget-title"*/}
                 </div>
-                <form className="search-form">
-                  <input type="text" placeholder="Search your keyword..." />
-                  <button type="submit">
-                    <i className="fas fa-search"> </i>
-                  </button>
-                </form>
-              </div>
-              <div className="widget mb-40">
-                <div className="widget-title-box mb-30">
-                  <span className="animate-border"></span>
-                  <h3 className="widget-title">About Me</h3>
-                </div>
-                <div className="about-me text-center">
-                  <Image src={imgOne} alt="" />
-                  <h4>Zulia Maron Duo</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore.
+                {/* <div className="about-me text-center"> */}
+                <div className="about-me">
+                  {/* <Image src={imgOne} alt="" /> */}
+                  {/* <h4>Zulia Maron Duo</h4> */}
+                  <p> MRADAR ® is a multi-cloud Security & Governance platform that integrates with our customer’s multiple cloud providers to provide a view into Security, Governance, Cost management, and Reporting.
                   </p>
-                  <div className="widget-social-icon">
-                    <SocilaLinks/>
+                  <p>MRADAR ® is a registered trademark of MP Infotech Corp</p>
+                  <p>Cloud Security & Governance is the complimentary activity of organizing, coordinating, and steering the corporate resources and actions in full compliance with defined governance policies while ensuring the achievement of strategic and operational objectives.</p>
+
+                  <h5 style={{ color: "red" }}>Are You Ready to Secure & Govern Your Business?</h5>
+                  <p>MRADAR Security & Governance platform can empower you to make informed decisions with respect to your cloud infrastructure.</p>
+                  {/* <div className="widget-social-icon">
+                    <SocilaLinks />
+                  </div> */}
+                  <div className="read-more mt-30 btn">
+                    <Link href={`/blog-details`}>
+                      <span className="btn-text">
+                        Get Started <i className="fas fa-long-arrow-alt-right"></i>
+                      </span>
+                    </Link>
                   </div>
                 </div>
               </div>
 
-              <div className="widget mb-40">
+              {/* <div className="widget mb-40">
                 <div className="widget-title-box mb-30">
                   <span className="animate-border"></span>
                   <h3 className="widget-title">Popular Feeds</h3>
@@ -72,9 +72,9 @@ const BlogSection = () => {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
 
-              <div className="widget mb-40">
+              {/* <div className="widget mb-40">
                 <div className="widget-title-box mb-30">
                   <span className="animate-border"></span>
                   <h3 className="widget-title">Categories</h3>
@@ -106,24 +106,24 @@ const BlogSection = () => {
                     </Link>
                   </li>
                 </ul>
-              </div>
-              <div className="widget mb-40">
+              </div> */}
+              {/* <div className="widget mb-40">
                 <div className="widget-title-box mb-30">
                   <span className="animate-border"></span>
                   <h3 className="widget-title">Social Profile</h3>
                 </div>
                 <div className="social-profile">
-                 <SocilaLinks/>
+                  <SocilaLinks />
                 </div>
-              </div>
-              <div className="widget mb-40">
+              </div> */}
+              {/* <div className="widget mb-40">
                 <div className="widget-title-box mb-30">
                   <span className="animate-border"></span>
                   <h3 className="widget-title">Instagram Feeds</h3>
                 </div>
                 <ul id="Instafeed"></ul>
-              </div>
-              <div className="widget mb-40">
+              </div> */}
+              {/* <div className="widget mb-40">
                 <div className="widget-title-box mb-30">
                   <span className="animate-border"></span>
                   <h3 className="widget-title">Instagram Feeds</h3>
@@ -142,16 +142,55 @@ const BlogSection = () => {
                   <Link href="/blog">keyboard</Link>
                   <Link href="/blog">tech</Link>
                 </div>
-              </div>
-              <div className="widget mb-40 p-0 b-0">
+              </div> */}
+              {/* <div className="widget mb-40 p-0 b-0">
                 <div className="banner-widget">
                   <Link href="">
                     <Image src={thumbOne} alt="" />
                   </Link>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
+
+          {/* <div className="row pt-40">
+            <div className="col-lg-6">
+
+              <div className="mb-40">
+                <div className="widget-title-box mb-30">
+                  <span className="animate-border"></span>
+                  <h3 >Security & Governance</h3>
+                </div>
+
+                <div className="about-me mb-30">
+                  <p> Define, Govern and measure the compliance of our customer’s clouds in a unified way. Cloud governance is a framework that guides how end users make use of cloud services by defining and creating policies to control costs, minimize security risks, improve efficiency, and accelerate deployment.
+                  </p>
+                </div>
+
+                <div className="widget-title-box mb-30">
+                  <span className="animate-border"></span>
+                  <h3 >Cost Management</h3>
+                </div>
+
+                <div className="about-me">
+                  <p> The need to focus on the efficient use of cloud services brings financial benefits; with a tool like MRADAR, most organizations are likely to spend their money wisely. Maximizing the value of the cloud requires a tight collaboration among the disciplines of governance, architecture, operations, product management, finance, and application development. Correlating cloud costs to business KPIs allows organizations to manage spending with respect to its return on investment (ROI).
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <div className="col-lg-6">
+
+              <div className=" mb-40">
+                <div className="about-me">
+                  <Image src={imgOne} alt="" />
+
+                </div>
+              </div>
+
+            </div>
+
+          </div> */}
         </div>
       </section>
     </>
