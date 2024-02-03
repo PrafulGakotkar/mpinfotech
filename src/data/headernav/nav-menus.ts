@@ -36,7 +36,7 @@ const navMenuData: MenuItem[] = [
       {
         id: 10,
         label: "Software Development",
-        link: "/service-2",
+        link: "/software-development",
       },
       {
         id: 11,

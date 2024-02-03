@@ -119,6 +119,25 @@
     height: 100%;
 
 }
+.life-cycle-box{
+    display: flex;
+    background-color: white; 
+    border: 1px solid lightblue;   
+    border-radius: 35px;
+}
+
+.life-cycle-box:hover{
+    box-shadow: 1px 1px 40px 10px lightblue;
+}
+.life-cycle-box-img{
+    height: 100px;
+    width: 100px;
+}
+.life-cycle-text{
+padding-top: 30px;
+padding-left: 40px;
+padding-right: 20px;
+}
 
 .back-img-service{
     background-image: url("../img/service/home8_section-bg1.png");

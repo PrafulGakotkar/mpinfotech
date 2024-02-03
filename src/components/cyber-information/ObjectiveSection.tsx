@@ -10,7 +10,7 @@ import thumbOne from "../../../public/assets/img/blog/details/banner.jpg";
 import { blogData } from "@/data/blog-data";
 import SocilaLinks from "@/utils/SocilaLinks";
 import { url } from "inspector";
-import ProductAccordion from "./ProductAccordion";
+
 
 const ObjectiveSection = () => {
   return (
