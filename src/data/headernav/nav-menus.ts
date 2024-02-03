@@ -30,7 +30,8 @@ const navMenuData: MenuItem[] = [
       {
         id: 9,
         label: "Cyber/Information Security",
-        link: "/service-1",
+        link: "/cyber-information",
+        // link: "/service-1",
       },
       {
         id: 10,

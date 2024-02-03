@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { Scrollbar, A11y, Autoplay, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
-import Image from "next/image";
 
 import client1 from '../../../public/assets/img/client/AgreeyaLogo.png'
 import client2 from '../../../public/assets/img/client/finaclesoft.png'
@@ -80,7 +80,8 @@ const TestimonialDefault = () => {
               <div className="testimonial-wrapper col">
                 <div className="testimonial-text">
                   <p>{item.details}</p>
-                  <Image style={{ width: "100%", height: "auto" }} src={item.img} alt="" />
+                  {/* <Image  src={item.img} alt="" /> */}
+                  {/* <Image style={{ width: "100%", height: "auto" }} src={item.img} alt="" /> */}
                   <h4> {item.name} </h4>
                   <span> {item.title} </span>
                 </div>

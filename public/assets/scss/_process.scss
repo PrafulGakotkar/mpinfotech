@@ -101,3 +101,42 @@
     margin: 0 auto;
     overflow: hidden;
 }
+
+.back-img{
+    background-image: url("../img/product/PCC_bg_img-scaled-1.jpg");
+	background-repeat: no-repeat;
+    background-size: cover;
+	height: 100%;
+	width: 100%;    
+	
+}
+.objective-box{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-right: 20px;
+    height: 100%;
+
+}
+
+.back-img-service{
+    background-image: url("../img/service/home8_section-bg1.png");
+	background-repeat: no-repeat;
+    background-size: cover;
+	height: 100%;
+	width: 100%;    
+}
+.image-box{
+    background-color: #FFFFFF;
+    width: 45%;
+    height: 23rem;
+    border-radius: 4% 15%;
+    transition: 2sec;
+    box-shadow: 1px 1px 12px 1px lightblue;
+}
+
+.image-box:hover{
+    border-radius: 15% 4% ;
+    
+}
