@@ -20,7 +20,7 @@ const TechnologySection = () => {
 
                             <div className=" mb-40 pt-40">
                                 <div className="about-me">
-                                    <Image src={imgOne} alt="" />
+                                    <Image className="p2-img" src={imgOne} alt="" />
 
                                 </div>
                             </div>

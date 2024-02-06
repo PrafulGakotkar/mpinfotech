@@ -44,7 +44,7 @@ const Phase2Section = () => {
                 <div style={{ position: "relative" }}  >
                   {/* <div style={{background: url("public/assets/img/product/home8_img.png")}}  > */}
 
-                  <Image className="p2-img" style={{ borderRadius: "3% 15%", padding: 0 }} src={imgTwo} alt="" />
+                  <Image className="p2-img" /*style={{ borderRadius: "3% 15%", padding: 0 }}*/ src={imgTwo} alt="" />
                   {/* <Image src={imgOne} alt="" /> */}
 
                 </div>

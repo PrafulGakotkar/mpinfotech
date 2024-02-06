@@ -30,8 +30,8 @@ const Phase34Section = () => {
 
                         <div className="col-lg-6 pt-60">
 
-                            <div className="mb-40">
-                                <div className="widget-title-box mb-30">
+                            <div className="mb-40 pt-50">
+                                <div className="widget-title-box  mb-30">
                                     <span className="animate-border"></span>
                                     <h5>PHASE 3 & PHASE 4:</h5>
                                     <h3 >Designing, Migrating, and Validating Application:</h3>
@@ -59,8 +59,8 @@ const Phase34Section = () => {
                         <div className="col-lg-6 pb-30 pl-20 pt-100">
 
                             <div className=" mb-40">
-                                <div className="about-me cloud-img" >
-                                    <div className="col-lg-3 image-box mb-30" >
+                                <div className="about-me cloud-img cloud-box " >
+                                    <div className="col-lg-3 image-box ml-30 mb-30" >
                                         <div className="pt-30">
                                             <Image style={{ height: 100, width: 120 }} src={imgThree} alt="" />
                                             <div style={{ paddingLeft: 50, paddingBottom: 50, paddingRight: 30 }}>
@@ -70,24 +70,23 @@ const Phase34Section = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="image-box" /*style={{ width: "50%", paddingLeft: 30 }}*/>
-                                        <div className="col-lg-3 image-box"  >
-                                            <div className="pt-30">
-                                                <Image style={{ height: 100, width: 120 }} src={imgFour} alt="" />
-                                                <div style={{ paddingLeft: 50, paddingBottom: 50, paddingRight: 30 }}>
-                                                    <h5>
-                                                        Retire</h5>
-                                                    <p>Identifying IT assets that are no longer useful and can be turned off will help boost your business case and direct your attention towards maintaining the resources that are widely used.</p>
-                                                </div>
+                                    <div className="col-lg-3 image-box ml-30 " >
+                                        <div className="pt-30">
+                                            <Image style={{ height: 100, width: 120 }} src={imgFour} alt="" />
+                                            <div style={{ paddingLeft: 50, paddingBottom: 50, paddingRight: 30 }}>
+                                                <h5>
+                                                Retire</h5>
+                                                <p>Identifying IT assets that are no longer useful and can be turned off will help boost your business case and direct your attention towards maintaining the resources that are widely used.</p>
                                             </div>
                                         </div>
                                     </div>
+                                    
 
 
                                 </div>
 
-                                <div className="about-me cloud-img pt-30 mb-30 " >
-                                    <div className="col-lg-3 image-box mb-30" >
+                                <div className="about-me cloud-img cloud-box pt-30 mb-30 " >
+                                    <div className="col-lg-3 image-box ml-30 mb-30" >
                                         <div className="pt-30">
                                             <Image style={{ height: 100, width: 120 }} src={imgFive} alt="" />
                                             <div style={{ paddingLeft: 50, paddingBottom: 50, paddingRight: 30 }}>
@@ -97,18 +96,17 @@ const Phase34Section = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="image-box" >
-                                        <div className="col-lg-3 image-box" style={{ width: "100%" }} >
-                                            <div className="pt-30">
-                                                <Image style={{ height: 100, width: 120 }} src={imgSix} alt="" />
-                                                <div style={{ paddingLeft: 50, paddingBottom: 50, paddingRight: 30 }}>
-                                                    <h5>
-                                                        Phase 5: Operate</h5>
-                                                    <p>As applications are migrated, you iterate on your new foundation, turn off old systems, and constantly iterate toward a modern operating model.</p>
-                                                </div>
+                                    <div className="col-lg-3 image-box ml-30 mb-30" >
+                                        <div className="pt-30">
+                                            <Image style={{ height: 100, width: 120 }} src={imgSix} alt="" />
+                                            <div style={{ paddingLeft: 50, paddingBottom: 50, paddingRight: 30 }}>
+                                                <h5>
+                                                Phase 5: Operate</h5>
+                                                <p>As applications are migrated, you iterate on your new foundation, turn off old systems, and constantly iterate toward a modern operating model.</p>
                                             </div>
                                         </div>
                                     </div>
+                                    
 
                                 </div>
                             </div>

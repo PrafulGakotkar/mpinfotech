@@ -1530,7 +1530,7 @@
 
     .image-box {
         background-color: #FFFFFF;
-        width: 100%;
+        width: 90%;
         
         border-radius: 5% 20%;
         transition: 2sec;
@@ -1539,9 +1539,9 @@
     }
 
     .cloud-box{
-        display: none;
+        display: block;
     }
-    p2-img{
+    .p2-img{
         width: 100%;
     }
 
