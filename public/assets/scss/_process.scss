@@ -1,12 +1,14 @@
-.working-process-area{
-    background-size:cover;
+.working-process-area {
+    background-size: cover;
     background-position: center center;
 }
-.working-process-icon{
+
+.working-process-icon {
     margin-bottom: 30px;
     position: relative;
-    & i{
-        color:$white;
+
+    & i {
+        color: $white;
         font-size: 60px;
         height: 140px;
         width: 140px;
@@ -16,101 +18,132 @@
         display: inline-block;
     }
 }
+
 .angle-icon {
-	position: absolute;
-	top: 42px;
-	right: -162px;
+    position: absolute;
+    top: 42px;
+    right: -162px;
 }
-.working-process-text{
-    & h3{
+
+.working-process-text {
+    & h3 {
         color: $white;
         font-size: 24px;
         font-family: $c_bold;
         margin-bottom: 10px;
     }
-    & p{
+
+    & p {
         color: $white;
         margin-bottom: 0;
         line-height: 30px;
     }
 }
+
 .wor-01 {
-	bottom: 6%;
-	right: 4%;
+    bottom: 6%;
+    right: 4%;
 }
+
 .wor-02 {
-	bottom: 15%;
-	left: 6%;
+    bottom: 15%;
+    left: 6%;
 }
 
 // work-process
 .work-process-wrapper {
-	border: 2px solid #f1f1f1;
+    border: 2px solid #f1f1f1;
     padding: 74px 45px 66px 45px;
     position: relative;
     transition: .3s;
 }
+
 .work-process-wrapper::before {
-	background-image: url("../img/bg/work.png");
-	background-repeat: no-repeat;
-	content: "";
-	height: 100%;
-	position: absolute;
-	transition: all 0.3s ease 0s;
-	width: 100%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	top: 0;
-	opacity: 0;
-	background-size: cover;
+    background-image: url("../img/bg/work.png");
+    background-repeat: no-repeat;
+    content: "";
+    height: 100%;
+    position: absolute;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    background-size: cover;
 }
+
 .work-process-wrapper:hover::before {
-	opacity: 1;
+    opacity: 1;
 }
+
 .work-process-wrapper.active::before {
-	opacity: 1;
+    opacity: 1;
 }
-.work-process-wrapper:hover{border-color: $theme-color;}
-.work-process-wrapper.active{border-color: $theme-color;}
+
+.work-process-wrapper:hover {
+    border-color: $theme-color;
+}
+
+.work-process-wrapper.active {
+    border-color: $theme-color;
+}
+
 .inner-content {
-	position: relative;
+    position: relative;
 }
+
 .work-process-icon {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
-.work-process-text{
-    & h3{
+
+.work-process-text {
+    & h3 {
         font-size: 24px;
-         font-family: $c_bold;
-         margin-bottom: 11px;
-         transition: .3s;
+        font-family: $c_bold;
+        margin-bottom: 11px;
+        transition: .3s;
     }
-    & p{
+
+    & p {
         margin-bottom: 0;
-       line-height: 30px;
-       transition: .3s;
+        line-height: 30px;
+        transition: .3s;
     }
 }
-.work-process-wrapper:hover .work-process-text h3{color:$white;}
-.work-process-wrapper:hover .work-process-text p{color:$white;}
-.work-process-wrapper.active .work-process-text h3{color:$white;}
-.work-process-wrapper.active .work-process-text p{color:$white;}
+
+.work-process-wrapper:hover .work-process-text h3 {
+    color: $white;
+}
+
+.work-process-wrapper:hover .work-process-text p {
+    color: $white;
+}
+
+.work-process-wrapper.active .work-process-text h3 {
+    color: $white;
+}
+
+.work-process-wrapper.active .work-process-text p {
+    color: $white;
+}
 
 .RCP {
     margin: 0 auto;
     overflow: hidden;
 }
 
-.back-img{
+.back-img {
     background-image: url("../img/product/PCC_bg_img-scaled-1.jpg");
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-	height: 100%;
-	width: 100%;    
-	
+    height: 100%;
+    width: 100%;
+
 }
-.objective-box{
+
+.objective-box {
     display: flex;
     background-color: white;
     border-radius: 10px;
@@ -119,43 +152,139 @@
     height: 100%;
 
 }
-.life-cycle-box{
+
+.life-cycle-box {
     display: flex;
-    background-color: white; 
-    border: 1px solid lightblue;   
+    background-color: white;
+    border: 1px solid lightblue;
     border-radius: 35px;
 }
 
-.life-cycle-box:hover{
+.life-cycle-box:hover {
     box-shadow: 1px 1px 40px 10px lightblue;
 }
-.life-cycle-box-img{
+
+.life-cycle-box-img {
     height: 100px;
     width: 100px;
 }
-.life-cycle-text{
-padding-top: 30px;
-padding-left: 40px;
-padding-right: 20px;
+
+.life-cycle-text {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 20px;
 }
 
-.back-img-service{
+.back-img-service {
     background-image: url("../img/service/home8_section-bg1.png");
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-	height: 100%;
-	width: 100%;    
+    height: 100%;
+    width: 100%;
 }
-.image-box{
+.cloud-box{
+    display: flex;
+}
+.image-box {
     background-color: #FFFFFF;
     width: 45%;
-    height: 23rem;
-    border-radius: 4% 15%;
+    
+    border-radius: 5% 20%;
     transition: 2sec;
     box-shadow: 1px 1px 12px 1px lightblue;
+    height: 430px;
 }
 
-.image-box:hover{
-    border-radius: 15% 4% ;
-    
+
+.image-box:hover {
+    border-radius: 15% 4%;
+
+}
+
+.offer-img {
+    height: 230px;
+    width: 250px;
+    transition: transform .9s;
+    padding: 0px;
+}
+
+.offer-img:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.3);
+}
+
+.offer-img-text {
+    position: absolute;
+    padding-left: 145px;
+    padding-top: 50px;
+    font-size: 50px;
+    color: white;
+    z-index: 1;
+
+}
+
+.text-center-offer {
+    text-align: center;
+}
+
+// Home css 
+
+.home-img{
+    position: absolute ;
+    height: 550px;
+    width: 650px;
+}
+.home-img-text{
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 200px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.home-img-text-sub{
+    position: absolute;
+    margin-top: 22rem;
+    margin-left: 200px;
+    color: white;
+}
+.home-title{
+    font-size: 30px;
+    margin-left: 28rem;
+    color: bisque;
+}
+.brand-title{
+    padding-left: 34rem;
+    font-size: 35px;
+    color: black;
+}
+.cyber-box{
+    padding-left: 65px;
+}
+
+
+// table Css 
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: #696687;
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #FFFFFF;
+    padding: 8px;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .home-img {
+        // position: absolute ;
+        height: 300px;
+        width: 300px;
+    }
+
 }

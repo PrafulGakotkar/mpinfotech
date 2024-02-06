@@ -26,7 +26,7 @@ const ObjectiveSection = () => {
           </div>
 
           <div className="row pb-30 " >
-            <div className="col-lg-6 " style={{ paddingLeft: 65 }}>
+            <div className="col-lg-6 cyber-box " >
               <div className="objective-box" >
                 <div className="widget-title-box mb-30" >
                   <div >

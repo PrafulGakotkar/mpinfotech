@@ -32,7 +32,7 @@ const CounterDefault = () => {
     return (
         <div className="counter-area pt-50 pb-50" style={{ background: "url(assets/img/bg/bg-3.jpg)" }}>
             <div className="container">
-                <div style={{fontSize:" 30px", marginLeft: "28rem",color: "bisque"}}>Industry Breach Facts</div>
+                <div className="home-title" /*style={{fontSize:" 30px", marginLeft: "28rem",color: "bisque"}}*/>Industry Breach Facts</div>
                 <div className="row turon-counter-content">
 
                     <div className="col-xl-2 col-lg-2 col-md-6">

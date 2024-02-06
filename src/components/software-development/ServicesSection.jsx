@@ -19,8 +19,8 @@ const ServicesSection = () => {
                         <div className="col-lg-6">
 
                             <div className=" mb-5">
-                                <div className="about-me" style={{ paddingLeft: 100, paddingTop: 50 }}>
-                                    <Image src={imgOne} alt="" />
+                                <div className="about-me service-img" style={{ paddingLeft: 100, paddingTop: 50 }}>
+                                    <Image className="service-img" src={imgOne} alt="" />
 
                                 </div>
                             </div>
@@ -83,8 +83,8 @@ const ServicesSection = () => {
                         <div className="col-lg-6">
 
                             <div className=" mb-5">
-                                <div className="about-me" style={{ height:"500px", width:"100%" ,}}>
-                                    <Image  style={{ height:"500px", width:"100%" , }} src={imgTwo} alt="" />
+                                <div className="about-me service-img" >
+                                    <Image className="service-img"  src={imgTwo} alt="" />
 
                                 </div>
                             </div>

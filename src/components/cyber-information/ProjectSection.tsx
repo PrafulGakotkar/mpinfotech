@@ -112,12 +112,12 @@ const ProjectSection = () => {
 
             </div>
 
-            <div className="col-lg-6">
+            <div className="col-lg-6 col-md-6">
 
               <div className=" mb-40">
                 <div className="about-me " style={{ display: "flex" }}>
-                  <div className="col-lg-3 image-box" >
-                    <div>
+                  <div className=" col-xl-3 col-lg-3 col-md-6 image-box" >
+                    <div style={{paddingTop:20}}>
                       <Image style={{ height: 100, width: 120 }} src={imgThree} alt="" />
                       <div style={{ paddingLeft: 50, paddingBottom: 50 }}>
                         <h5>
@@ -135,7 +135,7 @@ const ProjectSection = () => {
                   </div>
                   <div style={{ width: "50%", paddingLeft: 30 }}>
                     <div className="col-lg-3 image-box" style={{ width: "100%" }} >
-                      <div>
+                      <div style={{paddingTop:20}}>
                         <Image style={{ height: 100, width: 120 }} src={imgFour} alt="" />
                         <div style={{ paddingLeft: 50, paddingBottom: 50 }}>
                           <h5>
@@ -158,7 +158,7 @@ const ProjectSection = () => {
 
                 <div className="about-me " style={{ display: "flex", paddingTop: 30 }}>
                   <div className="col-lg-3 image-box" >
-                    <div>
+                    <div style={{paddingTop:20}}>
                       <Image style={{ height: 100, width: 120 }} src={imgFive} alt="" />
                       <div style={{ paddingLeft: 50, paddingBottom: 50 }}>
                         <h5>
@@ -175,7 +175,7 @@ const ProjectSection = () => {
                   </div>
                   <div style={{ width: "50%", paddingLeft: 30 }}>
                     <div className="col-lg-3 image-box" style={{ width: "100%" }} >
-                      <div>
+                      <div style={{paddingTop:20}}>
                         <Image style={{ height: 100, width: 120 }} src={imgSix} alt="" />
                         <div style={{ paddingLeft: 50, paddingBottom: 50 }}>
                           <h5>

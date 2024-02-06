@@ -27,7 +27,7 @@ const LifeCycleSection = () => {
                                     <h2 >Software Development Lifecycle</h2>
                                 </div>
                                 <div className="about-me">
-                                    <Image style={{ height: "450px", width: "450px" }} src={imgOne} alt="" />
+                                    <Image className="service-img"  src={imgOne} alt="" />
 
                                 </div>
                                 <p><b>Building:</b> Developers start to build the entire system by writing code using the chosen programming language, techniques, and methodologies.</p>
@@ -38,7 +38,7 @@ const LifeCycleSection = () => {
                         </div>
                         <div className="col-lg-6 pt-10">
 
-                            <div className=" " style={{ paddingRight: 170, marginBottom:15 }}>
+                            <div className="service-box " /*style={{ paddingRight: 170, marginBottom:15 }}*/>
                                 <div className="about-me life-cycle-box ">
                                     <div style={{ paddingTop: 40, paddingLeft: 10 }}>
                                         <Image className="life-cycle-box-img" src={imgTwo} alt="" />
@@ -50,7 +50,7 @@ const LifeCycleSection = () => {
                                 </div>
                             </div>
 
-                            <div className=" " style={{ paddingRight: 110, marginBottom:15, paddingLeft:60}}>
+                            <div className="service-box1 " /*style={{ paddingRight: 110, marginBottom:15, paddingLeft:60}}*/>
                                 <div className="about-me life-cycle-box ">
                                     <div style={{ paddingTop: 40, paddingLeft: 10 }}>
                                         <Image className="life-cycle-box-img" src={imgThree} alt="" />
@@ -64,7 +64,7 @@ const LifeCycleSection = () => {
                                 </div>
                             </div>
 
-                            <div className=" " style={{paddingRight:170, marginBottom:15}}>
+                            <div className="service-box " /*style={{paddingRight:170, marginBottom:15}}*/>
                                 <div className="about-me life-cycle-box ">
                                     <div  style={{paddingTop:40, paddingLeft:10}}>
                                         <Image className="life-cycle-box-img" src={imgFour} alt="" />
@@ -76,7 +76,7 @@ const LifeCycleSection = () => {
                                 </div>
                             </div>
 
-                            <div className=" " style={{paddingRight:170, marginBottom:15}}>
+                            <div className="service-box " /*style={{paddingRight:170, marginBottom:15}}*/>
                                 <div className="about-me life-cycle-box ">
                                     <div className="life-cycle-text">
                                         <p><b>Maintenance:</b> According to the service level agreement, we ensure that needs continue to be met and that the system continues to perform as per the specification mentioned in the first phase.</p>

@@ -46,8 +46,8 @@ const MobileSection = () => {
                         <div className="col-lg-6">
 
                             <div className=" mb-5">
-                                <div className="about-me">
-                                    <Image style={{ height: "500px", width: "100%" }} src={imgOne} alt="" />
+                                <div className="about-me service-img">
+                                    <Image className="service-img"/*style={{ height: "500px", width: "100%" }}*/ src={imgOne} alt="" />
 
                                 </div>
                             </div>

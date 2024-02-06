@@ -23,7 +23,7 @@ const AboutService = () => {
               {/* <div className="about-2-img">
                                 </div> */}
               <div className="about-1-wrapper">
-                <Image className='' src={thumbOne} alt="img-data" />
+                <Image className='about-img' src={thumbOne} alt="img-data" />
 
                 {/* <div className="about-button">
                                         <Link className="btn" href="/goals"><span className="btn-text">learn more <i className='fas fa-long-arrow-alt-right'></i></span></Link>

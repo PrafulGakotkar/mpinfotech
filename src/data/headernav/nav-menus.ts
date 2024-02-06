@@ -41,7 +41,7 @@ const navMenuData: MenuItem[] = [
       {
         id: 11,
         label: "Cloud Transformation",
-        link: "/service-3",
+        link: "/cloud-transformation",
         hasDropdown: true,
         subMenu: [
           {
@@ -54,7 +54,7 @@ const navMenuData: MenuItem[] = [
       {
         id: 12,
         label: "Technology Consulting",
-        link: "/service-manage",
+        link: "/Technology-consulting",
       },
       // {id: 30,
       //   label: "Service Details",

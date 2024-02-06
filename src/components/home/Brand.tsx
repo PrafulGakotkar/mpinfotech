@@ -35,11 +35,7 @@ const Brand = () => {
     <div className="brand-area pt-130 pb-130">
       <div className="container">
         <div className="row">
-          <div style={{
-            paddingLeft: " 34rem",
-            fontSize: 35,
-            color: "black",
-          }}> Our Clients</div>
+          <div className="brand-title" > Our Clients</div>
           <div className="col-xl-12">
             <Swiper
               modules={[Navigation, Scrollbar, A11y, Autoplay]}
@@ -56,13 +52,13 @@ const Brand = () => {
                   slidesPerView: 3,
                 },
                 992: {
-                  slidesPerView: 4,
+                  slidesPerView: 3,
                 },
                 1400: {
-                  slidesPerView: 5,
+                  slidesPerView: 4,
                 },
                 1700: {
-                  slidesPerView: 5,
+                  slidesPerView: 4,
                 },
               }}
               navigation={{

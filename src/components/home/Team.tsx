@@ -19,27 +19,16 @@ const Team = () => {
         </div>
         <div className="container">
           <div className="row mb-50">
-            <div className="col-xl-4 col-lg-6">
+            <div className="col-xl-6 col-lg-6">
               <div className="section-title  mb-30">
-
-                <Image style={{ position: "absolute" }} src={bgImg} alt="" />
-                <div style={{
-                  position: "absolute",
-                  marginTop: 230,
-                  marginLeft: 200,
-                  fontSize: 40,
-                  color: "white"
-                }}>We Can Help Secure<br /> Your Data</div>
-                <div style={{
-                  position: "absolute",
-                  marginTop: "22rem",
-                  marginLeft: 200,
-                  color: "white"
-                }}>Get In Touch With Our Team</div>
+                <div className="home-img"><Image className="home-img" src={bgImg} alt="" /></div>
+                
+                <div className="home-img-text" >We Can Help Secure<br /> Your Data</div>
+                <div className="home-img-text-sub" >Get In Touch With Our Team</div>
               </div>
             </div>
-            <div className="col-xl-5 offset-xl-3 col-lg-6">
-              <div className="team-section mb-30 z-index">
+            <div className="col-xl-6  col-lg-6">
+              <div className=" mb-30 ">
                 <span className="b-sm-left-1"></span>
                 <span className="b-sm-left-2"></span>
                 <span className="sub-t-left">EXPERIENCE</span>
@@ -48,16 +37,16 @@ const Team = () => {
                   MP Infotech Corp (MPIT) is fastest growing technology company enabling our clients to successfully migrate to the cloud with confidence and maximize the value, cyber security services, and software developed and delivered.
                 </p>
                 <div className="about-text " >
-                  <Link href="/service-1">
+                  <Link href="/cyber-information">
                     Information / CyberSecurity
                   </Link><br />
-                  <Link href="/service-1">
+                  <Link href="/cloud-transformation">
                     Cloud Transformation
                   </Link><br />
-                  <Link href="/service-1">
+                  <Link href="/software-development">
                     Software Development
                   </Link><br />
-                  <Link href="/service-1">
+                  <Link href="/our-offering">
                     Technical consulting
                   </Link><br /> <br />
                 </div><br />
@@ -73,15 +62,16 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div className="row mb-50 pt-120 pb-100">
+          <div className="row mb-50 pt-120 ">
+          {/* <div className="row mb-50 pt-120 pb-100"> */}
             <div className="col-xl-6  col-lg-6">
-              <div className="team-section mb-30 z-index" style={{height:"38rem"}}>
+              <div className="team-section mb-30 z-index" style={{ height: "38rem" }}>
 
                 <span className="" >Breakdown of Worldwide Public Cloud Services Spending Forecast (Millions of U.S. Dollars)</span>
-                <h1>Spend by Services</h1><br/>
+                <h1>Spend by Services</h1><br />
 
-                <Accordion  />
-                
+                <Accordion />
+
                 <Link className="btn" href="/contact">
 
                   <span className="btn-text">
@@ -95,57 +85,15 @@ const Team = () => {
             <div className="col-xl-6  col-lg-6">
               <div className="section-title  mb-30">
 
-                <Image style={{ position: "absolute" }} src={bgImg1} alt="" />
-                <div style={{
-                  position: "absolute",
-                  marginTop: 230,
-                  marginLeft: 200,
-                  fontSize: 40,
-                  color: "white"
-                }}>Have a project in mind?<br /> Let’s get to work.</div>
-                <div style={{
-                  position: "absolute",
-                  marginTop: "22rem",
-                  marginLeft: 200,
-                  color: "white"
-                }}>Find out how it works and ask any <br />questions you may have.
+                <Image className="home-img"  src={bgImg1} alt="" />
+                <div className="home-img-text" >Have a project in mind?<br /> Let’s get to work.</div>
+                <div className="home-img-text-sub" >Find out how it works and ask any <br />questions you may have.
                 </div>
               </div>
             </div>
 
           </div>
-          {/* <div className="row">
-           {teamData.slice(0,4).map((item) => (
-              <div key={item.id} className="col-xl-3 col-lg-3 col-md-6 mb-30">
-
-                <Link href={`/team-details/${item.id}`} className="team-wrapper">
-                  <div className="team-img">
-                    <Image style={{ width: "100%", height: "auto" }} src={item.img} alt="" />
-                  </div>
-                  <div className="team-text">
-                    <h4> <Link href={`/team-details/${item.id}`}>{item.name}</Link> </h4>
-                    <span> {item.title} </span>
-                    <div className="team-icon">
-                      <Link href="https://www.facebook.com/">
-                        <i className={item.facebook}></i>
-                      </Link>
-                      <Link href="https://twitter.com/">
-                        <i className={item.twitter}></i>
-                      </Link>
-                      <Link href="https://www.instagram.com/">
-                        <i className={item.instagram}></i>
-                      </Link>
-                      <Link href="https://www.youtube.com/">
-                        <i className={item.youtube}></i>
-                      </Link>
-                    </div>
-                  </div>
-                </Link>
-
-
-              </div>
-            ))}
-        </div> */}
+          
         </div>
       </div >
     </>
