@@ -6,6 +6,8 @@ import imgTow from "../../../public/assets/img/footer/02.jpg";
 import Image from "next/image";
 import FooterBottom from "./FooterBottom";
 import SocilaLinks from "@/utils/SocilaLinks";
+import HeaderOne from "../headers/HeaderOne";
+import MobileMenu from "../headers/MobileMenu";
 
 const FooterOne = () => {
   return (
@@ -36,16 +38,16 @@ const FooterOne = () => {
                   <h4 className="footer-title">Services</h4>
                   <ul className="fotter-menu">
                     <li>
-                      <Link href="/service-1">Our Offerings</Link>
+                      <Link href="/our-offering">Our Offerings</Link>
                     </li>
                     <li>
-                      <Link href="/service-1">Cloud Transformation</Link>
+                      <Link href="/cloud-transformation">Cloud Transformation</Link>
                     </li>
                     <li>
-                      <Link href="/service-1">Software Development</Link>
+                      <Link href="/software-development">Software Development</Link>
                     </li>
                     <li>
-                      <Link href="/service-1">Cyber/Information security</Link>
+                      <Link href="/cyber-information">Cyber/Information security</Link>
                     </li>
                     {/* <li>
                       <Link href="/service-1">Server Security</Link>
@@ -59,21 +61,32 @@ const FooterOne = () => {
               <div className="col-xl-2 col-lg-2 col-md-4">
                 <div className="footer-wrapper mb-30">
                   <h4 className="footer-title"> Community</h4>
+
                   <ul className="fotter-menu">
                     <li>
-                      <Link href="/about">Home </Link>
+                      <Link href="/">Home </Link>
                     </li>
                     <li>
-                      <Link href="/goals">About Us</Link>
+                      <Link href="/about">About Us</Link>
                     </li>
                     <li>
-                      <Link href="/service-1">IT Services</Link>
+                      {/* <Link href="/service-1">IT Services</Link> */}
+                      <div className="dropdown">
+                        <button className="dropbtn">It Services</button>
+                        <div className="dropdown-content">
+                          <Link href="cyber-information">Cyber / Information Security</Link>
+                          <Link href="software-development">Software Development</Link>
+                          <Link href="cloud-transformation">Cloud Transformation</Link>
+                          <Link href="Technology-consulting">Technology Consulting</Link>
+                        </div>
+                      </div>
+                      
                     </li>
                     <li>
-                      <Link href="/faq">Our Products</Link>
+                      <Link href="/product">Our Products</Link>
                     </li>
                     <li>
-                      <Link href="/team">Careers</Link>
+                      <Link href="/careers">Careers</Link>
                     </li>
                     <li>
                       <Link href="/contact">Contact Us</Link>
@@ -86,13 +99,13 @@ const FooterOne = () => {
                   <h4 className="footer-title">Quick Links</h4>
                   <ul className="fotter-menu">
                     <li>
-                      <Link href="/about">Our Product </Link>
+                      <Link href="/product">Our Product </Link>
                     </li>
                     <li>
                       <Link href="/goals">Privacy Policy</Link>
                     </li>
                     <li>
-                      <Link href="/service-1">Cyber/Information Security</Link>
+                      <Link href="/cyber-information">Cyber/Information Security</Link>
                     </li>
 
                   </ul>

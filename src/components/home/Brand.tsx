@@ -46,10 +46,10 @@ const Brand = () => {
               centeredSlides={false}
               breakpoints={{
                 320: {
-                  slidesPerView: 3,
+                  slidesPerView: 4,
                 },
                 768: {
-                  slidesPerView: 3,
+                  slidesPerView: 4,
                 },
                 992: {
                   slidesPerView: 3,
@@ -69,7 +69,7 @@ const Brand = () => {
               {brandLogos.map((item) => (
                 <SwiperSlide key={item.id}>
                   <div className="brand-img">
-                    <Image src={item.logo} alt="" />
+                    <Image className="brand-img1" src={item.logo} alt="" />
                   </div>
                 </SwiperSlide>
               ))}

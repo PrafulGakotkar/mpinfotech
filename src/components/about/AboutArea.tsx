@@ -52,7 +52,7 @@ const AboutArea = () => {
                                 {/* <div className="about-2-img">
                                 </div> */}
                                  <div className="about-1-wrapper">
-                                <Image className='about-box-img' /*style={{marginLeft:"33rem", marginTop:"2rem"}}*/ src={thumbThree} alt="img-data" />
+                                <Image className='about-box-img1' /*style={{marginLeft:"33rem", marginTop:"2rem"}}*/ src={thumbThree} alt="img-data" />
                                     <div className="about-text">
                                         
                                         {/* <span>Our Vision</span> */}

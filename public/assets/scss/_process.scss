@@ -182,13 +182,15 @@
     height: 100%;
     width: 100%;
 }
-.cloud-box{
+
+.cloud-box {
     display: flex;
 }
+
 .image-box {
     background-color: #FFFFFF;
     width: 45%;
-    
+
     border-radius: 5% 20%;
     transition: 2sec;
     box-shadow: 1px 1px 12px 1px lightblue;
@@ -232,35 +234,40 @@
 
 // Home css 
 
-.home-img{
-    position: absolute ;
+.home-img {
+    position: absolute;
     height: 550px;
     width: 650px;
 }
-.home-img-text{
+
+.home-img-text {
     position: absolute;
     margin-top: 230px;
     margin-left: 200px;
     font-size: 40px;
     color: rgb(255, 255, 255);
 }
-.home-img-text-sub{
+
+.home-img-text-sub {
     position: absolute;
     margin-top: 22rem;
     margin-left: 200px;
     color: white;
 }
-.home-title{
+
+.home-title {
     font-size: 30px;
     margin-left: 28rem;
     color: bisque;
 }
-.brand-title{
+
+.brand-title {
     padding-left: 34rem;
     font-size: 35px;
     color: black;
 }
-.cyber-box{
+
+.cyber-box {
     padding-left: 65px;
 }
 
@@ -287,4 +294,50 @@
         width: 300px;
     }
 
+}
+
+//dropdown 
+.dropbtn {
+    // background-color: #000000;
+    color: #696969;
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    background: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #696969;
+    // padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    line-height: 30px;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    color: #096bd8;
 }

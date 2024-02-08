@@ -52,16 +52,16 @@ const FooterTwo = () => {
                                     <h4 className="footer-title">Services</h4>
                                     <ul className="fotter-menu">
                                         <li>
-                                            <Link href="/service-1">Our Offerings</Link>
+                                            <Link href="/our-offering">Our Offerings</Link>
                                         </li>
                                         <li>
-                                            <Link href="/service-1">Cloud Transformation</Link>
+                                            <Link href="/cloud-transformation">Cloud Transformation</Link>
                                         </li>
                                         <li>
-                                            <Link href="/service-1">Software Development</Link>
+                                            <Link href="/software-development">Software Development</Link>
                                         </li>
                                         <li>
-                                            <Link href="/service-1">Cyber/Information security</Link>
+                                            <Link href="/cyber-information">Cyber/Information security</Link>
                                         </li>
                                         {/* <li>
                       <Link href="/service-1">Server Security</Link>
@@ -77,19 +77,28 @@ const FooterTwo = () => {
                                     <h4 className="footer-title"> Community</h4>
                                     <ul className="fotter-menu">
                                         <li>
-                                            <Link href="/about">Home </Link>
+                                            <Link href="/">Home </Link>
                                         </li>
                                         <li>
-                                            <Link href="/goals">About Us</Link>
+                                            <Link href="/about">About Us</Link>
                                         </li>
                                         <li>
-                                            <Link href="/service-1">IT Services</Link>
+                                            {/* <Link href="/service-1">IT Services</Link> */}
+                                            <div className="dropdown">
+                                                <button className="dropbtn">It Services</button>
+                                                <div className="dropdown-content">
+                                                    <Link href="cyber-information">Cyber / Information Security</Link>
+                                                    <Link href="software-development">Software Development</Link>
+                                                    <Link href="cloud-transformation">Cloud Transformation</Link>
+                                                    <Link href="Technology-consulting">Technology Consulting</Link>
+                                                </div>
+                                            </div>
                                         </li>
                                         <li>
-                                            <Link href="/faq">Our Products</Link>
+                                            <Link href="/product">Our Products</Link>
                                         </li>
                                         <li>
-                                            <Link href="/team">Careers</Link>
+                                            <Link href="/career">Careers</Link>
                                         </li>
                                         <li>
                                             <Link href="/contact">Contact Us</Link>
@@ -102,13 +111,13 @@ const FooterTwo = () => {
                                     <h4 className="footer-title">Quick Links</h4>
                                     <ul className="fotter-menu">
                                         <li>
-                                            <Link href="/about">Our Product </Link>
+                                            <Link href="/product">Our Product </Link>
                                         </li>
                                         <li>
-                                            <Link href="/goals">Privacy Policy</Link>
+                                            <Link href="/privacy">Privacy Policy</Link>
                                         </li>
                                         <li>
-                                            <Link href="/service-1">Cyber/Information Security</Link>
+                                            <Link href="/cyber-information">Cyber/Information Security</Link>
                                         </li>
 
                                     </ul>

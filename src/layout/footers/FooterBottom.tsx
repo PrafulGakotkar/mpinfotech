@@ -18,9 +18,9 @@ const FooterBottom = () => {
               </div>
               <div className="col-xl-4 col-lg-4 col-md-4">
                 <div className="footer-bottem-text text-md-right">
-                  <p>
+                  {/* <p>
                     Design By <Link href="">Torun</Link>
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>
