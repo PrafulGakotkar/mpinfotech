@@ -17,38 +17,43 @@ const CourseDefault = () => {
       img: thumbOne,
       title:"Our Team ",
       subTitle:"People",
-      url:"/contact"
+      url:"people"
     },
     {
       id: 2,
       img: thumbTwo,
       title:"Our Team ",
       subTitle:"Process",
+      url:"process",
     },
     {
       id: 3,
       img: thumbThree,
       title:"Mp info ",
       subTitle:"Manage Service - Cloud Transformation",
+      url:"manage-service",
     },
     {
       id: 4,
       img: thumbFour,
       title:"MP info ",
       subTitle:"Differentiators",
+      url:"differentiators",
     },
     {
       id: 5,
       img: thumbTwo,
       title:"Our Team ",
       subTitle:"Process",
+      url:"process",
+      
     },
     {
       id: 6,
       img: thumbThree,
       title:"Mp info ",
       subTitle:"Manage Service - Cloud Transformation",
-      
+      url:"manage-service",
     },
   ];
 
@@ -91,7 +96,7 @@ const CourseDefault = () => {
                 <div className="project-text">
                   <span>{item.title}</span>
                   <h3>
-                    <Link href ="${item.url}" >{item.subTitle}</Link>
+                  <Link href={`/${item.url}`}> {item.subTitle}</Link>
                     {/* <Link href="/case-1">{item.subTitle}</Link> */}
                   </h3>
                 </div>
