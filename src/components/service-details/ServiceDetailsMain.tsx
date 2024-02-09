@@ -14,7 +14,7 @@ const ServiceDetailsMain = ({ id }: idType) => {
                     <div className="row">
                         <div className="col-lg-8">
                             <div className="bd-service-details mb-50">
-                                <div className="bd-service-details-img mb-50">
+                                <div key={service.id} className="bd-service-details-img mb-50">
                                     <Image src={service.banner} style={{ width: "100%", height: "auto" }} alt="img not found" />
                                 </div>
                                 <p className="mb-30">When I skim through the documentation of popular frameworks, I find the features described in Part 1 straight away. When I read the web platform documentation (for example, on MDN), I find many confusing patterns of how to do things, without a conclusive representation of data-binding, list synchronization, or reactivity. I will try to draw some guidelines of how to approach these problems on the web platform, without requiring a framework (in other words, by going vanilla).</p>

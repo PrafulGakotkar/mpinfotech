@@ -1,11 +1,9 @@
 
 import IconOne from "../../public/assets/img/icon/icon-01.png"
 import IconTwo from "../../public/assets/img/icon/icon-2.svg"
-// import IconTwo from "../../public/assets/img/icon/icon-2.png"
 import IconThree from "../../public/assets/img/icon/icon-3.png"
 import IconFour from "../../public/assets/img/icon/icon-4.png"
-import IconFive from "../../public/assets/img/icon/icon-5.png"
-import IconSix from "../../public/assets/img/icon/icon-6.png"
+
 
 export const  serviceDataTwo = [
     

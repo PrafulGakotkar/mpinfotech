@@ -102,7 +102,7 @@ const FooterOne = () => {
                       <Link href="/product">Our Product </Link>
                     </li>
                     <li>
-                      <Link href="/goals">Privacy Policy</Link>
+                      <Link href="/privacy">Privacy Policy</Link>
                     </li>
                     <li>
                       <Link href="/cyber-information">Cyber/Information Security</Link>

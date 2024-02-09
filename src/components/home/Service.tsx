@@ -3,6 +3,10 @@ import bgImg from "../../../public/assets/img/bg/bg-1.jpg";
 import Image from "next/image";
 import Link from "next/link";
 import { serviceDataTwo } from "@/data/service-data-two";
+import IconOne from "../../../public/assets/img/icon/icon-01.png"
+import IconTwo from "../../../public/assets/img/icon/icon-2.svg"
+import IconThree from "../../../public/assets/img/icon/icon-3.png"
+import IconFour from "../../../public/assets/img/icon/icon-4.png"
 const Service = () => {
   return (
     <>
@@ -22,7 +26,7 @@ const Service = () => {
             </div>
           </div>
           <div className="row">
-            {serviceDataTwo.map((item) => (
+            {/* {serviceDataTwo.map((item) => (
               <div key={item.id} className="col-xl-3 col-lg-3 col-md-6 mb-30">
                 <div className="services-wrapper text-center">
                   <div className="services-img">
@@ -40,7 +44,84 @@ const Service = () => {
                   </div>
                 </div>
               </div>
-            ))}
+            ))} */}
+
+
+
+              <div  className="col-xl-3 col-lg-3 col-md-6 mb-30">
+                <div className="services-wrapper text-center">
+                  <div className="services-img">
+                    <Image style={{padding:0}} src={IconOne}  alt="" />
+                  </div>
+                  <div className="services-text">
+                    <h3> Software Development </h3>
+                    <p> DEVELOP SOFTWARE FOR IN-HOUSE AND CLIENT-RELATED PROJECTS. </p>
+                    <Link style={{marginTop:50}} href="/software-development">
+                      <span className="services-button">
+                        read more{" "}
+                        <i className="fas fa-long-arrow-alt-right"></i>
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div  className="col-xl-3 col-lg-3 col-md-6 mb-30">
+                <div className="services-wrapper text-center">
+                  <div className="services-img">
+                    <Image style={{padding:0}} src={IconTwo}  alt="" />
+                  </div>
+                  <div className="services-text">
+                    <h3> Cloud Transformation </h3>
+                    <p> TRANSITION BUSINESS DATA, APPS, AND SOFTWARE TO THE CLOUD. DESIGN, BUILD AND OPERATE. </p>
+                    <Link href="/cloud-transformation">
+                      <span className="services-button">
+                        read more{" "}
+                        <i className="fas fa-long-arrow-alt-right"></i>
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div  className="col-xl-3 col-lg-3 col-md-6 mb-30">
+                <div className="services-wrapper text-center">
+                  <div className="services-img">
+                    <Image style={{padding:0}} src={IconThree}  alt="" />
+                  </div>
+                  <div className="services-text">
+                    <h3>Information / Cybersecurity</h3>
+                    <p> PROTECTING INFORMATION BY PREVENTING, DETECTING, AND RESPONDING TO CYBER-ATTACKS. </p>
+                    <Link href="/cyber-information">
+                      <span className="services-button">
+                        read more{" "}
+                        <i className="fas fa-long-arrow-alt-right"></i>
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+
+              <div  className="col-xl-3 col-lg-3 col-md-6 mb-30">
+                <div className="services-wrapper text-center">
+                  <div className="services-img">
+                    <Image style={{padding:0}} src={IconFour}  alt="" />
+                  </div>
+                  <div className="services-text">
+                    <h3> Technology Consulting </h3>
+                    <p> HELP CLIENTS WITH TALENTED TECHNICAL PROFESSIONALS. </p>
+                    <Link style={{marginTop:55}} href="/Technology-consulting">
+                      <span className="services-button">
+                        read more{" "}
+                        <i className="fas fa-long-arrow-alt-right"></i>
+                      </span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+         
+
+
           </div>
         </div>
       </div>
