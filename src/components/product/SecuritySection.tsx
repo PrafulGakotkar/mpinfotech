@@ -10,9 +10,9 @@ import SocilaLinks from "@/utils/SocilaLinks";
 const SecuritySection = () => {
   return (
     <>
-      <section className="blog-area pt-40 pb-80" style={{backgroundColor:"#f2f2f2"}}>
+      <section className="blog-area pt-40 pb-80" style={{ backgroundColor: "#f2f2f2" }}>
         <div className="container">
-        
+
 
           <div className="row ">
             <div className="col-lg-6">
@@ -44,7 +44,9 @@ const SecuritySection = () => {
 
               <div className=" mb-40">
                 <div className="about-me">
-                  <Image src={imgOne} alt="" />
+                  <Image
+                    style={{ width: "100%", height: "auto" }}
+                    src={imgOne} alt="" />
 
                 </div>
               </div>

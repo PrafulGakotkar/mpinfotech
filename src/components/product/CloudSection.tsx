@@ -50,7 +50,8 @@ const CloudSection = () => {
                 <div style={{ position: "relative" }}  >
                   {/* <div style={{background: url("public/assets/img/product/home8_img.png")}}  > */}
 
-                  <Image style={{ borderRadius: "3% 15%", padding: 0 }} src={imgTwo} alt="" />
+                  <Image style={{ borderRadius: "3% 15%", padding: 0, width: "100%", height: "auto" }}
+                    src={imgTwo} alt="" />
                   {/* <Image src={imgOne} alt="" /> */}
 
                 </div>
@@ -75,7 +76,7 @@ const CloudSection = () => {
                 </div>
 
                 <div className="about-me mb-30">
-                  <p> We integrate with AWS and Azure.<br/>
+                  <p> We integrate with AWS and Azure.<br />
                     Our platform will integrate using MRADAR APIs into our customer’s cloud platform securely and provide the stakeholder with governance controls, reporting capabilities, the compliance status of their cloud infrastructure, cost management, risk metrics due to control violations, and identified configurations for remediation.
 
                   </p>
@@ -86,7 +87,7 @@ const CloudSection = () => {
                   <ProductAccordion />
                 </div>
 
-                
+
               </div>
 
             </div>
@@ -96,7 +97,7 @@ const CloudSection = () => {
                 <div style={{ position: "relative" }}  >
                   {/* <div style={{background: url("public/assets/img/product/home8_img.png")}}  > */}
 
-                  <Image style={{ width:"100%", height:"100%" }} src={imgThree} alt="" />
+                  <Image style={{ width: "100%", height: "100%" }} src={imgThree} alt="" />
                   {/* <Image src={imgOne} alt="" /> */}
 
                 </div>

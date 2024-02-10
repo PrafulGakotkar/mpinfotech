@@ -108,23 +108,36 @@ const CareerDetailsMain = () => {
                     <div className="form-container">
                         <h2>Job Application Form</h2>
                         <form >
-                        {/* <form onSubmit={handleSubmit}> */}
+                            {/* <form onSubmit={handleSubmit}> */}
                             <div className="form-row">
                                 <div className="form-group">
-                                    <label htmlFor="firstName">First Name:</label>
+                                    <label htmlFor="firstName">Name:</label>
                                     <input
                                         type="text"
                                         id="firstName"
                                         name="firstName"
+                                        placeholder="Name"
                                         value=""
                                         // value={formData.firstName}
-                                        
+
                                         // onChange={handleChange}
                                         required
                                     />
                                 </div>
-
                                 <div className="form-group">
+                                    <label htmlFor="email">Email ID:</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="Email"
+                                        value=""
+
+                                        required
+                                    />
+                                </div>
+
+                                {/* <div className="form-group">
                                     <label htmlFor="lastName">Last Name:</label>
                                     <input
                                         type="text"
@@ -134,33 +147,23 @@ const CareerDetailsMain = () => {
                                      
                                         required
                                     />
-                                </div>
+                                </div> */}
+
                             </div>
                             <div className="form-row">
-                                <div className="form-group">
-                                    <label htmlFor="email">Email ID:</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        value=""
-                                     
-                                        required
-                                    />
-                                </div>
+
                                 <div className="form-group">
                                     <label htmlFor="mobile">Mobile No:</label>
                                     <input
                                         type="tel"
                                         id="mobile"
                                         name="mobile"
+                                        placeholder="Mobile"
                                         value=""
-                                       
+
                                         required
                                     />
                                 </div>
-                            </div>
-                            <div className="form-row">
                                 <div className="form-group">
                                     <label htmlFor="education">Highest Education:</label>
                                     <input
@@ -168,10 +171,14 @@ const CareerDetailsMain = () => {
                                         id="education"
                                         name="education"
                                         value=""
+                                        placeholder="Highest Education"
                                         // onChange={}
                                         required
                                     />
                                 </div>
+                            </div>
+                            <div className="form-row">
+                               
 
                                 <div className="form-group">
                                     <label htmlFor="experience">Year of Experience:</label>
@@ -179,14 +186,12 @@ const CareerDetailsMain = () => {
                                         type="number"
                                         id="experience"
                                         name="experience"
+                                        placeholder="Year of Experience"
                                         value=""
                                         // onChange={}
                                         required
                                     />
                                 </div>
-
-                            </div>
-                            <div className="form-row">
                                 <div className="form-group">
                                     <label htmlFor="resume">Resume:</label>
                                     <input
@@ -200,6 +205,10 @@ const CareerDetailsMain = () => {
                                 </div>
 
                             </div>
+                            {/* <div className="form-row">
+                                
+
+                            </div> */}
 
                             {/* Repeat similar form-row blocks for other input fields */}
 
