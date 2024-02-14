@@ -232,9 +232,9 @@ const ProjectSection = () => {
                 <div className="about-me mb-30 ">
                   <p>Penetration testing is an authorized method to simulate an attack performed on a computer system to evaluate its security. Our industry-certified penetration testers use sophisticated tools, techniques, and processes as attackers to find and demonstrate the business impacts of weaknesses in a system that could impact a business and its clients. This assessment would demonstrate whether a system is robust enough to withstand attacks from authenticated and unauthenticated positions, as well as a range of system roles. With the right scope defined, Pen testing can help an organization.</p>
 
-                  <p> <i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Find weaknesses in systems.</p>
-                  <p><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Assess and determine the robustness of controls implemented</p>
-                  <p><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Provide qualitative and quantitative data on current security posture and budget priorities for management.</p>
+                  <p> <span className="dot"></span> Find weaknesses in systems.</p>
+                  <p><span className="dot"></span>  Assess and determine the robustness of controls implemented</p>
+                  <p><span className="dot"></span>  Provide qualitative and quantitative data on current security posture and budget priorities for management.</p>
                 </div>
               </div>
 

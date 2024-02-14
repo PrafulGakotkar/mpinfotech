@@ -16,27 +16,27 @@ a {
         font-size: 14px;
         font-family: $c_bold;
         text-transform: uppercase;
-        padding-left: 86px;
+        // padding-left: 86px;
 
-        &::after {
-            background: $theme-color;
-            height: 3px;
-            width: 40px;
-            content: "";
-            position: absolute;
-            left: 26px;
-            top: 10px;
-        }
+        // &::after {
+        //     background: $theme-color;
+        //     height: 3px;
+        //     width: 40px;
+        //     content: "";
+        //     position: absolute;
+        //     left: 26px;
+        //     top: 10px;
+        // }
 
-        &::before {
-            background: $theme-color;
-            height: 3px;
-            width: 15px;
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 10px;
-        }
+        // &::before {
+        //     background: $theme-color;
+        //     height: 3px;
+        //     width: 15px;
+        //     content: "";
+        //     position: absolute;
+        //     left: 0;
+        //     top: 10px;
+        // }
     }
 
     & h1 {

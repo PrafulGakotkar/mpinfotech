@@ -29,15 +29,15 @@ const MobileSection = () => {
                                     <p>Our team of developers will lead the entire mobile app development process from ideation and concept to delivery and to ongoing support, whether it is a consumer-oriented app or a transformative enterprise-class solution.</p>
                                     
                                     <ul>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Custom iOS and Android apps development  </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Native and cross-platform solutions  </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Second platform app development  </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>UI/UX design  </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Consulting and prototyping  </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Automated QA and testing  </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Power management, notification and geofencing  </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Embedded Android & AOSP customizations  </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Maintenance and post-warranty support  </li>
+                                        <li><span className="dot"></span> Custom iOS and Android apps development  </li>
+                                        <li><span className="dot"></span> Native and cross-platform solutions  </li>
+                                        <li><span className="dot"></span> Second platform app development  </li>
+                                        <li><span className="dot"></span> UI/UX design  </li>
+                                        <li><span className="dot"></span> Consulting and prototyping  </li>
+                                        <li><span className="dot"></span> Automated QA and testing  </li>
+                                        <li><span className="dot"></span> Power management, notification and geofencing  </li>
+                                        <li><span className="dot"></span> Embedded Android & AOSP customizations  </li>
+                                        <li><span className="dot"></span> Maintenance and post-warranty support  </li>
                                     </ul>
                                 </div>
                             </div>

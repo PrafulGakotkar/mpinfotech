@@ -13,11 +13,13 @@ import BlogGrid from './Blog';
 import Brand from './Brand';
 import Newsletter from './Newsletter';
 import CounterDefault1 from './CounterDefault1';
+import ChoseArea from '../about/ChoseArea';
 
 const HomeMain = () => {
     return (
         <>
            {/* <SliderDefault/> */}
+           {/* <ChoseArea /> */}
            <About/>
            <Service/>
            <Team/>

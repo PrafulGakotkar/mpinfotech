@@ -32,7 +32,7 @@ const CloudSecuritySection = () => {
 
                                     <p>he speed and scale at which resources can be deployed in the cloud makes it virtually impossible to enforce security governance in cloud computing manually. The key is to leverage automation tools like MRADAR360 that monitors compliance with the policies and industry best practices to prevent users from operating outside policy guardrails.</p>
 
-                                    <p><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Cloud security governance refers to the management model that facilitates effective and efficient security management and operations in the cloud environment so that an enterprise’s business targets are achieved.</p>
+                                    <p><span className="dot"></span> Cloud security governance refers to the management model that facilitates effective and efficient security management and operations in the cloud environment so that an enterprise’s business targets are achieved.</p>
 
 
                                 </div>

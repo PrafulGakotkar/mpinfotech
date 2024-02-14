@@ -30,7 +30,7 @@ const ObjectiveSection = () => {
           </div>
 
           <div className="row pb-30 " >
-            <div className="col-lg-6 " style={{ paddingLeft: 65 }}>
+            <div className="col-lg-6 pl-65 " /*style={{ paddingLeft: 65 }}*/>
               <div className="objective-box" >
                 <div className="widget-title-box mb-30" >
                   <div >
@@ -70,7 +70,7 @@ const ObjectiveSection = () => {
 
 
           <div className="row pb-30 " >
-            <div className="col-lg-6 " style={{ paddingLeft: 65 }}>
+            <div className="col-lg-6 pl-65 " /*style={{ paddingLeft: 65 }}*/>
               <div className="objective-box" >
                 <div className="widget-title-box mb-30" >
                   <div >
@@ -139,7 +139,7 @@ const ObjectiveSection = () => {
            
             <h3 >Are You Ready to Secure & Govern Your Business?</h3>
             <span className="animate-border" style={{ width: 65 }}></span>
-            <div style={{paddingLeft:250, paddingRight:250}}>
+            <div className="obj-sec" /*style={{paddingLeft:250, paddingRight:250}}*/>
               <p>
               MRADAR Security & Governance platform can empower you to make informed decisions with respect to your cloud infrastructure.
               </p>

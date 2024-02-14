@@ -37,13 +37,13 @@ const OfferingSection = () => {
                                 </div>
 
                                 <div className="about-me  ">
-                                   <p> <i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i> Share your contact us here; one of our team members will reach out to you and understand the scope.</p>
-                                    <p><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>We will work out a schedule that works for everyone involved; to go over the scope, timelines, and estimated price.</p>
-                                    <p><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Rules of engagement will be set that meet the goals that are agreed. As work is being conducted, we will be sure to keep you informed every step of the way.</p>
+                                   <p> <span className="dot"></span> Share your contact us here; one of our team members will reach out to you and understand the scope.</p>
+                                    <p><span className="dot"></span> We will work out a schedule that works for everyone involved; to go over the scope, timelines, and estimated price.</p>
+                                    <p><span className="dot"></span> Rules of engagement will be set that meet the goals that are agreed. As work is being conducted, we will be sure to keep you informed every step of the way.</p>
 
-                                    <p><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>A report will be created that informs you as to what was discovered and what we suggest to correct any issues.</p>
+                                    <p><span className="dot"></span> A report will be created that informs you as to what was discovered and what we suggest to correct any issues.</p>
 
-                                    <p><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>We will work with you to make sure you understand the results and have the knowledge needed to take any actions that you may need to take.</p>
+                                    <p><span className="dot"></span> We will work with you to make sure you understand the results and have the knowledge needed to take any actions that you may need to take.</p>
                                 </div>
                             </div>
 

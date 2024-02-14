@@ -65,7 +65,7 @@ const ObjectiveSection = () => {
             </div>
           </div>
           <div className="services-text text-center">
-                    <Link href="/contact">
+                    <Link href="https://www.mradar360.com">
                         <span className="services-button">
                             Our Products{" "}
                             <i className="fas fa-long-arrow-alt-right"></i>

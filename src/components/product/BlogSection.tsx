@@ -39,7 +39,7 @@ const BlogSection = () => {
                     <SocilaLinks />
                   </div> */}
                   <div className="read-more mt-30 btn">
-                    <Link href={`/blog-details`}>
+                    <Link href={`https://www.mradar360.com`}>
                       <span className="btn-text">
                         Get Started <i className="fas fa-long-arrow-alt-right"></i>
                       </span>

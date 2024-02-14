@@ -1,18 +1,20 @@
 import { blogDataTwo } from "@/data/blog-data-two";
 import Image from "next/image";
-import imgOne from "../../../public/assets/img/product/Cross-platform software-amico.png";
+import imgOne from "../../../public/assets/img/product/cloud-2.png";
+// import imgOne from "../../../public/assets/img/product/Cross-platform software-amico.png";
 import Link from "next/link";
 import React from "react";
 const ArticleLayout = () => {
   return (
     <>
-    <div>
-    <Image
-                style={{ width: "100%", height: "auto" }}
-                src={imgOne}
-                alt="blog image"
-              />
-    </div>
+      <div>
+        <Image
+          className="product-img"
+          /*style={{ width: "100%", height: "530px", paddingTop: 50 }}*/
+          src={imgOne}
+          alt="blog image"
+        />
+      </div>
       {/* {blogDataTwo.map((item) => (
         <article key={item.id} className="postbox post format-image mb-40">
           <div className="postbox__thumb mb-30">

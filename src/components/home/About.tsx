@@ -33,11 +33,15 @@ const About = () => {
                     }}
                   />
                 </div> */}
-                                <p>
+                                {/* <p>
                                     MP INFOTECH CORP (MPIT) is a leading professional IT service and solution company transforming clients’ businesses through various service offerings.
-                                </p>
-                                <Link href="/service-1">
+                                </p> */}
+                                <p>MP Infotech Corp (MPIT) is an IT service and solution company to enable our customer’s business through various service offerings like Cloud Transformation, Software development, and Cyber / Information Security. We have created strategic partnerships with leading technology companies like Amazon Web Service (AWS), Alertlogic, Force point and provide value-added services with our experience and best practices, helping our clients to maximize their IT investment and enable them to meet their “Time to Market” demands. Our multi-cloud security and governance platform, MRADAR® enables our customers to secure their data in the cloud.</p>
+                                <Link href="/cyber-information">
                                     Our Services <i className="fas fa-long-arrow-alt-right"></i>
+                                </Link>
+                                <Link style={{marginLeft:70}} href="/service-1">
+                                    About Us <i className="fas fa-long-arrow-alt-right"></i>
                                 </Link>
                             </div>
                         </div>

@@ -66,13 +66,13 @@ const ServicesSection = () => {
                                     <p>SDLC methodologies support the design of software to meet a business need, the development of software to meet the specified design and the deployment of software to production.  A methodology should also support maintenance, although that option may or may not be chosen, depending on the project in question.</p>
                                     <p>The Waterfall model, the original SDLC method, is linear and sequential, generally following these stages in order:</p>
                                     <ul>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Identification of required software </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Analysis of the software requirements </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Detailed specification of the software requirements </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Software design </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Programming </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Testing </li>
-                                        <li><i className="fa-solid fa-circle fa-2xs" style={{ color: "blue", paddingRight: 6 }}></i>Maintenance </li>
+                                        <li><span className="dot"></span> Identification of required software </li>
+                                        <li><span className="dot"></span> Analysis of the software requirements </li>
+                                        <li><span className="dot"></span> Detailed specification of the software requirements </li>
+                                        <li><span className="dot"></span> Software design </li>
+                                        <li><span className="dot"></span> Programming </li>
+                                        <li><span className="dot"></span> Testing </li>
+                                        <li><span className="dot"></span> Maintenance </li>
                                         
                                     </ul>
                                 </div>

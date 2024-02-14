@@ -76,8 +76,13 @@ const CareersSection = () => {
                                     <div className="blog-post-content">
                                         <span>
 
+                                          Posted On :  01 feb 2024    {/* location */}
+                                        </span>
+                                        <span>
+
                                             India    {/* location */}
                                         </span>
+                                        <span>Job Type : full Time</span>
 
                                         <h3>
                                             <Link href="/career-details">

@@ -31,11 +31,11 @@ const ChallengeSection = () => {
                             <div className="mb-40 ">
                                 <p>The rapid adoption of multi-cloud deployments and demand for massive economies of scale, processing speed, and agility might result in: An organization needs to define the standards and controls to adhere to governance.</p>
                                 <ul>
-                                    <li><i className="fa-solid fa-circle fa-2xs" style={{color:"blue", paddingRight:6}}></i>Measuring the compliance of the multi-cloud infrastructure.</li>
-                                    <li> <i className="fa-solid fa-circle fa-2xs" style={{color:"blue", paddingRight:6}}></i>Lacking visibility into multi-cloud asset inventory.</li>
-                                    <li > <i className="fa-solid fa-circle fa-2xs" style={{color:"blue", paddingRight:6}}></i>Lacking real-time activity and alerting for violations or configuration errors to provide visibility to remediate.</li>
-                                    <li><i className="fa-solid fa-circle fa-2xs" style={{color:"blue", paddingRight:6}}></i>Lacking cost management to find the value of the service.</li>
-                                    <li><i className="fa-solid fa-circle fa-2xs" style={{color:"blue", paddingRight:6}}></i>Lacking visibility into cloud</li>
+                                    <li><span className="dot"></span> Measuring the compliance of the multi-cloud infrastructure.</li>
+                                    <li> <span className="dot"></span> Lacking visibility into multi-cloud asset inventory.</li>
+                                    <li > <span className="dot"></span> Lacking real-time activity and alerting for violations or configuration errors to provide visibility to remediate.</li>
+                                    <li><span className="dot"></span> Lacking cost management to find the value of the service.</li>
+                                    <li><span className="dot"></span> Lacking visibility into cloud</li>
                                 </ul>
 
                             </div>
@@ -50,11 +50,11 @@ const ChallengeSection = () => {
                                 <p>
                                     Multi-Cloud Security & Governance, Cost Management and operations on a unified dashboard</p>
                                 <ul>
-                                    <li><i className="fa-solid fa-circle fa-2xs" style={{color:"blue", paddingRight:6}}></i>Define, govern and measure the compliance of our customer’s clouds in a unified way.</li>
-                                    <li><i className="fa-solid fa-circle fa-2xs" style={{color:"blue", paddingRight:6}}></i>Track the cloud resources, manage costs and detect security events, based on misconfigurations, threats and changes.</li>
-                                    <li><i className="fa-solid fa-circle fa-2xs" style={{color:"blue", paddingRight:6}}></i>Cost management of multi-cloud infrastructure, identifying value of service.</li>
-                                    <li><i className="fa-solid fa-circle fa-2xs" style={{color:"blue", paddingRight:6}}></i>Cloud-Ops dashboard helps promote action on risks and mitigate them in a timely manner.</li>
-                                    <li><i className="fa-solid fa-circle fa-2xs" style={{color:"blue", paddingRight:6}}></i>Reporting capability provides the needed visibility to Senior management and other stake holders.</li>
+                                    <li><span className="dot"></span> Define, govern and measure the compliance of our customer’s clouds in a unified way.</li>
+                                    <li><span className="dot"></span> Track the cloud resources, manage costs and detect security events, based on misconfigurations, threats and changes.</li>
+                                    <li><span className="dot"></span> Cost management of multi-cloud infrastructure, identifying value of service.</li>
+                                    <li><span className="dot"></span> Cloud-Ops dashboard helps promote action on risks and mitigate them in a timely manner.</li>
+                                    <li><span className="dot"></span> Reporting capability provides the needed visibility to Senior management and other stake holders.</li>
                                 </ul>
 
                             </div>

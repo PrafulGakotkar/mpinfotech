@@ -9,11 +9,12 @@ const ContactSection = () => {
           <div className="col-xl-7 col-lg-7 ">
             <div className="contact-wrapper mb-30">
               <div className="section-title section-title-white mb-25">
-                <span className="b-sm-left-2"></span>
-                <span className="sub-t-left">contact us</span>
-                <h1>
+                {/* <span className="b-sm-left-2"></span> */}
+                {/* <span className="sub-t-left">contact us</span> */}
+                <h1>Contact Us</h1>
+                {/* <h1>
                   {`Don't`} Hesitate To <br /> Contact Us
-                </h1>
+                </h1> */}
               </div>
               <form action="assets/mail.php" id="contact-form">
                 <div className="row">

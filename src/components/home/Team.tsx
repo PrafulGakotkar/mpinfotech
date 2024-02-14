@@ -29,9 +29,9 @@ const Team = () => {
             </div>
             <div className="col-xl-6  col-lg-6">
               <div className=" mb-30 ">
-                <span className="b-sm-left-1"></span>
-                <span className="b-sm-left-2"></span>
-                <span className="sub-t-left">EXPERIENCE</span>
+                {/* <span className="b-sm-left-1"></span> */}
+                {/* <span className="b-sm-left-2"></span> */}
+                <span >EXPERIENCE</span>  {/*className="sub-t-left" */}
                 <h1>Our Services</h1>
                 <p>
                   MP Infotech Corp (MPIT) is fastest growing technology company enabling our clients to successfully migrate to the cloud with confidence and maximize the value, cyber security services, and software developed and delivered.
