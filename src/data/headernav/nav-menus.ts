@@ -38,20 +38,20 @@ const navMenuData: MenuItem[] = [
         label: "Software Development",
         link: "/software-development",
       },
-      {
-        id: 11,
-        label: "Cloud Transformation",
-        link: "/cloud-transformation",
-        hasDropdown: true,
-        subMenu: [
-          {
-            id: 8,
-            // id: 31,
-            label: "Software",
-            link: "/service-2",
-          },
-        ],
-      },
+      // {
+      //   id: 11,
+      //   label: "Cloud Transformation",
+      //   link: "/cloud-transformation",
+      //   hasDropdown: true,
+      //   subMenu: [
+      //     {
+      //       id: 8,
+      //       // id: 31,
+      //       label: "Software",
+      //       link: "/service-2",
+      //     },
+      //   ],
+      // },
       {
         id: 12,
         label: "Technology Consulting",

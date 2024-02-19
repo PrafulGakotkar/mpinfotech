@@ -12,16 +12,17 @@ const ChoseArea = () => {
                     <div className="choose-bg">
                         <div className="container">
                             <div className="row px-5">
-                                <div className="col-xl-6 col-lg-6 mb-30">
-                                    <div className="faq-wrapper">
-                                        <div className="section-title mb-45">
-                                            <span className="b-sm-left-1"></span>
-                                            <span className="b-sm-left-2"></span>
-                                            <span className="sub-t-left">About Us</span>
+                            <div className="section-title mb-45">
+                                            {/* <span className="b-sm-left-1"></span>
+                                            <span className="b-sm-left-2"></span> */}
+                                            <span className="">About Us</span>
                                             <h1>Welcome to MP Infotech</h1>
                                         </div>
+                                <div className="col-xl-6 col-lg-6 mb-30">
+                                    <div className="faq-wrapper">
+                                        
                                         <div className="faq-box faq-2-box">
-                                        <Image style={{height:"100%", width:'100%', paddingLeft:0, paddingRight:12}} src={thumb} alt="img-data" />
+                                        <Image style={{height:"300px", width:'100%', paddingLeft:0, paddingRight:12, marginTop:15}} src={thumb} alt="img-data" />
                                             {/* <AboutFaq/> */}
                                         </div>
                                     </div>

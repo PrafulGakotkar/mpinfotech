@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import imgOne from "../../../public/assets/img/service/tabs_content-03-400x303.jpg";
+import imgOne from "../../../public/assets/img/service/call-center.webp";
 import imgTwo from "../../../public/assets/img/service/SDLC_BWC.png";
 
 import Link from "next/link";
@@ -11,7 +11,7 @@ const ServicesSection = () => {
         <>
 
 
-            <section className="blog-area pt-100 pb-5 " >
+            <section className="blog-area pt-100 pb-35 " >
                 <div className="container">
 
 
@@ -19,7 +19,7 @@ const ServicesSection = () => {
                         <div className="col-lg-6">
 
                             <div className=" mb-5">
-                                <div className="about-me service-img" style={{ paddingLeft: 100, paddingTop: 50 }}>
+                                <div className="about-me service-img" style={{ paddingLeft: 100, }}>
                                     <Image className="service-img" src={imgOne} alt="" />
 
                                 </div>
@@ -49,7 +49,7 @@ const ServicesSection = () => {
 
                     </div>
 
-                    <div className="row ">
+                    <div className="row pt-100 ">
 
                         <div className="col-lg-6 pt-10">
 
@@ -66,13 +66,13 @@ const ServicesSection = () => {
                                     <p>SDLC methodologies support the design of software to meet a business need, the development of software to meet the specified design and the deployment of software to production.  A methodology should also support maintenance, although that option may or may not be chosen, depending on the project in question.</p>
                                     <p>The Waterfall model, the original SDLC method, is linear and sequential, generally following these stages in order:</p>
                                     <ul>
-                                        <li><span className="dot"></span> Identification of required software </li>
-                                        <li><span className="dot"></span> Analysis of the software requirements </li>
-                                        <li><span className="dot"></span> Detailed specification of the software requirements </li>
-                                        <li><span className="dot"></span> Software design </li>
-                                        <li><span className="dot"></span> Programming </li>
-                                        <li><span className="dot"></span> Testing </li>
-                                        <li><span className="dot"></span> Maintenance </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Identification of required software </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Analysis of the software requirements </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Detailed specification of the software requirements </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Software design </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Programming </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Testing </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Maintenance </li>
                                         
                                     </ul>
                                 </div>

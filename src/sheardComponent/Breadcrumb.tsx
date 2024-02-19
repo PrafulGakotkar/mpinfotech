@@ -8,7 +8,7 @@ interface propsType{
 const Breadcrumb = ({pageTitle}:propsType) => {
 
   return (
-      <div className="breadcrumb-area pt-100 pb-100" style={{ background: "url(assets/img/bg/breadcrumb-bg-2.jpg)" }}>
+      <div className="breadcrumb-area pt-100 pb-100" style={{ background: "url(assets/img/bg/abstract-dark-blue-futuristic-digital-grid-background.jpg)" }}>
       {/* <div className="breadcrumb-area pt-100 pb-100" style={{ background: "url(assets/img/bg/bg-14.jpg)" }}> */}
 	    <div className="container">
 	        <div className="row">

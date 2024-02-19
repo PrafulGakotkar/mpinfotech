@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import imgOne from "../../../public/assets/img/service/CONSULTING.png";
-import imgTwo from "../../../public/assets/img/service/outsourcing.jpg";
+import imgOne from "../../../public/assets/img/service/flat-concept-isometric-illustration-cloud.webp";
+import imgTwo from "../../../public/assets/img/service/Consulting-Overview.jpg";
 
 
 
@@ -53,7 +53,7 @@ const TechnologySection = () => {
                 </div>
             </section>
 
-            <section className="blog-area pt-10 pb-80 back-img"  >
+            <section className="blog-area pt-10 pb-80 "  >
                 <div className="container">
 
 

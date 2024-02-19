@@ -1,6 +1,6 @@
 import React from "react";
 import ArticleLayout from "./ArticleLayout";
-import imgOne from "../../../public/assets/img/product/Data-Protection.png";
+import imgOne from "../../../public/assets/img/product/Logo_transparent.webp";
 import Image from "next/image";
 import Link from "next/link";
 import thumbOne from "../../../public/assets/img/blog/details/banner.jpg";
@@ -19,9 +19,22 @@ const BlogSection = () => {
 
             <div className="col-lg-6">
 
-              <div className="widget mb-40">
+              <div className=" mb-40">
                 <div className="widget-title-box mb-30">
-                  <span className="animate-border"></span>
+                  {/* <span className="animate-border"></span><br /> */}
+                  <Image
+                    className=""
+                    style={{
+                      padding: 0, margin: 0, height: 50,
+                      color: "transparent",
+                      width: 100,
+                      backgroundColor: "#67a7a7",
+                      boxShadow:"0px 0px 5px 5px lightblue",
+                      borderRadius:8
+                    }}
+                    src={imgOne}
+                    alt="blog image"
+                  />
                   <h3 >MRADAR ® a multi-cloud Security & Governance Platform</h3> {/*className="widget-title"*/}
                 </div>
                 {/* <div className="about-me text-center"> */}

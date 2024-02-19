@@ -10,7 +10,7 @@ const FooterTwo = () => {
             <footer>
                 <div className="footer-area pt-80" style={{ background: "url(assets/img/bg/bg-1.jpg)" }}>
                     <div className="container">
-                        <div className="newsletter-bg pb-50 mb-80">
+                        {/* <div className="newsletter-bg pb-50 mb-80">
                             <div className="row">
                                 <div className="col-xl-6 col-lg-7 mb-30">
                                     <div className="single-newsletter ">
@@ -28,7 +28,7 @@ const FooterTwo = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="row">
                             <div className="col-xl-3 col-lg-3 col-md-4">
                                 <div className="footer-wrapper mb-30">
@@ -54,9 +54,9 @@ const FooterTwo = () => {
                                         <li>
                                             <Link href="/our-offering">Our Offerings</Link>
                                         </li>
-                                        <li>
+                                        {/* <li>
                                             <Link href="/cloud-transformation">Cloud Transformation</Link>
-                                        </li>
+                                        </li> */}
                                         <li>
                                             <Link href="/software-development">Software Development</Link>
                                         </li>
@@ -89,7 +89,7 @@ const FooterTwo = () => {
                                                 <div className="dropdown-content">
                                                     <Link href="cyber-information">Cyber / Information Security</Link>
                                                     <Link href="software-development">Software Development</Link>
-                                                    <Link href="cloud-transformation">Cloud Transformation</Link>
+                                                    {/* <Link href="cloud-transformation">Cloud Transformation</Link> */}
                                                     <Link href="Technology-consulting">Technology Consulting</Link>
                                                 </div>
                                             </div>

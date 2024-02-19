@@ -100,7 +100,7 @@ const ProjectSection = () => {
                   <p style={{ paddingLeft: 30 }}>IT Security Penetration testing</p>
                 </div>
                 <div className="services-text">
-                    <Link href="/contact">
+                    <Link href="/product">
                         <span className="services-button">
                             Our Products{" "}
                             <i className="fas fa-long-arrow-alt-right"></i>
@@ -116,7 +116,7 @@ const ProjectSection = () => {
 
               <div className=" mb-40">
                 <div className="about-me cloud-img cloud-box" >
-                  <div className=" col-xl-3 col-lg-3 col-md-6 image-box ml-30 mb-30" >
+                  <div className=" col-xl-3 col-lg-3 col-md-6 image-box ml-30 mb-30" style={{backgroundColor : "#AAC2C3"}}  >
                     <div className="pt-20">
                       <Image style={{ height: 100, width: 120 }} src={imgThree} alt="" />
                       <div style={{ paddingLeft: 50, paddingBottom: 50 }}>
@@ -134,7 +134,7 @@ const ProjectSection = () => {
                     </div>
                   </div>
                   {/* <div className="about-me cloud-img cloud-box pt-30 mb-30 "> */}
-                    <div className="col-lg-3 image-box ml-30 mb-30"  >
+                    <div className="col-lg-3 image-box ml-30 mb-30" style={{backgroundColor : "#95AAE3"}}  >
                       <div className="pt-30">
                         <Image style={{ height: 100, width: 120 }} src={imgFour} alt="" />
                         <div style={{ paddingLeft: 50, paddingBottom: 50 }}>
@@ -156,7 +156,7 @@ const ProjectSection = () => {
 
                 </div>
                 <div className="about-me cloud-img cloud-box" >
-                  <div className=" col-xl-3 col-lg-3 col-md-6 image-box ml-30 mb-30" >
+                  <div className=" col-xl-3 col-lg-3 col-md-6 image-box ml-30 mb-30" style={{backgroundColor : "#CCD0C0"}}>
                     <div className="pt-20">
                       <Image style={{ height: 100, width: 120 }} src={imgFive} alt="" />
                       <div style={{ paddingLeft: 50, paddingBottom: 50 }}>
@@ -174,7 +174,7 @@ const ProjectSection = () => {
                     </div>
                   </div>
                   {/* <div className="about-me cloud-img cloud-box pt-30 mb-30 "> */}
-                    <div className="col-lg-3 image-box ml-30 mb-30"  >
+                    <div className="col-lg-3 image-box ml-30 mb-30" style={{backgroundColor : "#c6d7ad"}} >
                       <div className="pt-30">
                         <Image style={{ height: 100, width: 120 }} src={imgSix} alt="" />
                         <div style={{ paddingLeft: 50, paddingBottom: 50 }}>
@@ -232,9 +232,9 @@ const ProjectSection = () => {
                 <div className="about-me mb-30 ">
                   <p>Penetration testing is an authorized method to simulate an attack performed on a computer system to evaluate its security. Our industry-certified penetration testers use sophisticated tools, techniques, and processes as attackers to find and demonstrate the business impacts of weaknesses in a system that could impact a business and its clients. This assessment would demonstrate whether a system is robust enough to withstand attacks from authenticated and unauthenticated positions, as well as a range of system roles. With the right scope defined, Pen testing can help an organization.</p>
 
-                  <p> <span className="dot"></span> Find weaknesses in systems.</p>
-                  <p><span className="dot"></span>  Assess and determine the robustness of controls implemented</p>
-                  <p><span className="dot"></span>  Provide qualitative and quantitative data on current security posture and budget priorities for management.</p>
+                  <p> <i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Find weaknesses in systems.</p>
+                  <p><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i>  Assess and determine the robustness of controls implemented</p>
+                  <p><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i>  Provide qualitative and quantitative data on current security posture and budget priorities for management.</p>
                 </div>
               </div>
 

@@ -15,8 +15,7 @@ const About = () => {
                             <div className="about-text">
                                 <span>who we are</span>
                                 <h1>
-                                    WELCOME TO<br />
-                                    <span>MPIT </span>
+                                    WELCOME TO <span>MPIT </span>
                                 </h1>
                                 {/* <div>
                   <Typewriter

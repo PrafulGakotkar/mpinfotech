@@ -40,9 +40,9 @@ const FooterOne = () => {
                     <li>
                       <Link href="/our-offering">Our Offerings</Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link href="/cloud-transformation">Cloud Transformation</Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link href="/software-development">Software Development</Link>
                     </li>
@@ -76,7 +76,7 @@ const FooterOne = () => {
                         <div className="dropdown-content">
                           <Link href="cyber-information">Cyber / Information Security</Link>
                           <Link href="software-development">Software Development</Link>
-                          <Link href="cloud-transformation">Cloud Transformation</Link>
+                          {/* <Link href="cloud-transformation">Cloud Transformation</Link> */}
                           <Link href="Technology-consulting">Technology Consulting</Link>
                         </div>
                       </div>

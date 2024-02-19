@@ -11,7 +11,7 @@ const ContactForm = () => {
                                     <span className="border-left-1"></span>
                                     <span>contact us</span>
                                     <span className="border-right-1"></span>
-                                    <h1>{`Don't`} Hesitate To Contact Us</h1>
+                                    <h1></h1>
                                 </div>
                             </div>
                         </div>

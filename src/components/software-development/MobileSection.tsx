@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import imgOne from "../../../public/assets/img/service/mobile.jpg";
+import imgOne from "../../../public/assets/img/service/risks-in-mobile-application-development-industry.webp";
 
 import Link from "next/link";
 
@@ -28,16 +28,16 @@ const MobileSection = () => {
                                 <div className="about-me  ">
                                     <p>Our team of developers will lead the entire mobile app development process from ideation and concept to delivery and to ongoing support, whether it is a consumer-oriented app or a transformative enterprise-class solution.</p>
                                     
-                                    <ul>
-                                        <li><span className="dot"></span> Custom iOS and Android apps development  </li>
-                                        <li><span className="dot"></span> Native and cross-platform solutions  </li>
-                                        <li><span className="dot"></span> Second platform app development  </li>
-                                        <li><span className="dot"></span> UI/UX design  </li>
-                                        <li><span className="dot"></span> Consulting and prototyping  </li>
-                                        <li><span className="dot"></span> Automated QA and testing  </li>
-                                        <li><span className="dot"></span> Power management, notification and geofencing  </li>
-                                        <li><span className="dot"></span> Embedded Android & AOSP customizations  </li>
-                                        <li><span className="dot"></span> Maintenance and post-warranty support  </li>
+                                    <ul>  
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Custom iOS and Android apps development  </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Native and cross-platform solutions  </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Second platform app development  </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> UI/UX design  </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Consulting and prototyping  </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Automated QA and testing  </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Power management, notification and geofencing  </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Embedded Android & AOSP customizations  </li>
+                                        <li style={{fontSize:15}}><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Maintenance and post-warranty support  </li>
                                     </ul>
                                 </div>
                             </div>

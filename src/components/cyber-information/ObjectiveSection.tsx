@@ -27,7 +27,7 @@ const ObjectiveSection = () => {
 
           <div className="row pb-30 " >
             <div className="col-lg-6 cyber-box " >
-              <div className="objective-box" >
+              <div className="objective-box" style={{backgroundColor : "#AAC2C3"}} >
                 <div className="widget-title-box mb-30" >
                   <div >
                     <Image style={{ height: "100%", paddingRight: 15 }} src={imgOne} alt="" />
@@ -45,7 +45,7 @@ const ObjectiveSection = () => {
               </div>
             </div>
             <div className="col-lg-6 " >
-              <div className="objective-box" >
+              <div className="objective-box" style={{backgroundColor : "#AAC2C3"}} >
                 <div className="widget-title-box mb-30" >
                   <div >
                     <Image style={{ height: "100%", paddingRight: 15 }} src={imgTwo} alt="" />

@@ -13,7 +13,7 @@ const CtaTwo = () => {
             <div className="col-xl-7 col-lg-6">
               <div className="cta-text mb-30">
                 <span>do you have any project ?</span>
-                <h1>{`Let’s`} Talk About Business Soluations With Us</h1>
+                <h1>{`Let’s`} Talk About Business Solutions With Us</h1>
               </div>
             </div>
             <div className="col-xl-5 col-lg-6">
@@ -28,7 +28,7 @@ const CtaTwo = () => {
                 </Link>
                 <Link
                   className="btn btn-white join-button btn-none btn-margin"
-                  href="/contact"
+                  href="/product"
                 >
                   <span className="btn-text">
                     join with us <i className="fas fa-long-arrow-alt-right"></i>

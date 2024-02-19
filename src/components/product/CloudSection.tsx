@@ -50,7 +50,7 @@ const CloudSection = () => {
                 <div style={{ position: "relative" }}  >
                   {/* <div style={{background: url("public/assets/img/product/home8_img.png")}}  > */}
 
-                  <Image style={{ borderRadius: "3% 15%", padding: 0, width: "100%", height: "auto" }}
+                  <Image className="product-img1" style={{ borderRadius: "3% 21%", padding: 0,  }}
                     src={imgTwo} alt="" />
                   {/* <Image src={imgOne} alt="" /> */}
 

@@ -32,7 +32,7 @@ const HomeMain = () => {
            <Contact/>
            {/* <BlogGrid/> */}
            <Brand/>
-           <Newsletter/>
+           {/* <Newsletter/> */}
         </>
     );
 };

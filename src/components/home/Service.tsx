@@ -48,7 +48,7 @@ const Service = () => {
 
 
 
-              <div  className="col-xl-3 col-lg-3 col-md-6 mb-30">
+              <div  className="col-xl-4 col-lg-4 col-md-6 mb-30">
                 <div className="services-wrapper text-center">
                   <div className="services-img">
                     <Image style={{padding:0}} src={IconOne}  alt="" />
@@ -66,7 +66,7 @@ const Service = () => {
                 </div>
               </div>
 
-              <div  className="col-xl-3 col-lg-3 col-md-6 mb-30">
+              {/* <div  className="col-xl-3 col-lg-3 col-md-6 mb-30">
                 <div className="services-wrapper text-center">
                   <div className="services-img">
                     <Image style={{padding:0}} src={IconTwo}  alt="" />
@@ -82,9 +82,9 @@ const Service = () => {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
-              <div  className="col-xl-3 col-lg-3 col-md-6 mb-30">
+              <div  className="col-xl-4 col-lg-4 col-md-6 mb-30">
                 <div className="services-wrapper text-center">
                   <div className="services-img">
                     <Image style={{padding:0}} src={IconThree}  alt="" />
@@ -92,7 +92,7 @@ const Service = () => {
                   <div className="services-text">
                     <h3>Information / Cybersecurity</h3>
                     <p> PROTECTING INFORMATION BY PREVENTING, DETECTING, AND RESPONDING TO CYBER-ATTACKS. </p>
-                    <Link href="/cyber-information">
+                    <Link style={{marginTop:50}} href="/cyber-information">
                       <span className="services-button">
                         read more{" "}
                         <i className="fas fa-long-arrow-alt-right"></i>
@@ -102,7 +102,7 @@ const Service = () => {
                 </div>
               </div>
 
-              <div  className="col-xl-3 col-lg-3 col-md-6 mb-30">
+              <div  className="col-xl-4 col-lg-4 col-md-6 mb-30">
                 <div className="services-wrapper text-center">
                   <div className="services-img">
                     <Image style={{padding:0}} src={IconFour}  alt="" />
@@ -158,7 +158,7 @@ const Service = () => {
 
                 </div>
                   <div style={{ marginLeft: 200 }}>
-                    Men and women, committed to better protect you around the world.</div>
+                    <p>Men and women, committed to better protect you around the world.</p></div>
                 </div>
                 <div style={{ marginTop: 50 }}>
                   <div style={{ position: "absolute" }}>
@@ -172,7 +172,7 @@ const Service = () => {
 
                 </div>
                   <div style={{ marginLeft: 200 }}>
-                    Where you will find the same quality of service and dedication around the world.</div>
+                    <p>Where you will find the same quality of service and dedication around the world.</p></div>
                 </div>
                 <div style={{ marginTop: 50 }}>
                   <div style={{ position: "absolute" }}>
@@ -185,8 +185,8 @@ const Service = () => {
                   marginLeft: "9rem"}}>
 
                 </div>
-                <div style={{ marginLeft: 180 }}>
-                  Making us one of the leading technology services companies around the globe.</div>
+                <div style={{ marginLeft: 200 }}>
+                  <p>Making us one of the leading technology services companies around the globe.</p></div>
               </div>
             </div>
           </div>
