@@ -40,9 +40,9 @@ const Team = () => {
                   <Link href="/cyber-information">
                     Information / CyberSecurity
                   </Link><br />
-                  <Link href="/cloud-transformation">
+                  {/* <Link href="/cloud-transformation">
                     Cloud Transformation
-                  </Link><br />
+                  </Link><br /> */}
                   <Link href="/software-development">
                     Software Development
                   </Link><br />

@@ -17,21 +17,21 @@ const CtaTwo = () => {
               </div>
             </div>
             <div className="col-xl-5 col-lg-6">
-              <div className="cta-button text-lg-right mb-30">
-                <Link
+              <div className="cta-button text-lg-center mb-30">
+                {/* <Link
                   className="btn btn-white join-button btn-none"
                   href="/contact"
                 >
                   <span className="btn-text">
                     contact us <i className="fas fa-long-arrow-alt-right"></i>
                   </span>
-                </Link>
+                </Link> */}
                 <Link
                   className="btn btn-white join-button btn-none btn-margin"
-                  href="/product"
+                  href="/contact"
                 >
-                  <span className="btn-text">
-                    join with us <i className="fas fa-long-arrow-alt-right"></i>
+                  <span className="btn-text ">
+                    Contact Us <i className="fas fa-long-arrow-alt-right"></i>
                   </span>
                 </Link>
               </div>

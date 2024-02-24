@@ -13,7 +13,7 @@ import ProductAccordion from "./ProductAccordion";
 const CloudSection = () => {
   return (
     <>
-      <div className="mt-30 "></div>
+      {/* <div className="mt-30 "></div> */}
       <section className="blog-area pt-80 pb-80" style={{ backgroundColor: "#f2f2f2" }}>
         <div className="container">
 

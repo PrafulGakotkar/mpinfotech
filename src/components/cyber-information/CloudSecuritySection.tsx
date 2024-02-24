@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import imgOne from "../../../public/assets/img/service/home_img-01.png";
-import imgTwo from "../../../public/assets/img/service/Cy2-1.png";
+import imgTwo from "../../../public/assets/img/service/cloud-computing-security-service-illustration-flat-design-suitable-for-many-purposes-vector.jpg";
 
 import Link from "next/link";
 

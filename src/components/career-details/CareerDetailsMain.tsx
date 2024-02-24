@@ -1,71 +1,137 @@
-// import Breadcrumb from '@/sheardComponent/Breadcrumb';
-// import React from 'react';
-// import Categories from './Categories';
-// import Courses from './Courses';
-// import CareersSection from './CareersSection';
 
-// const CareerDetailsMain = () => {
-//     return (
-//         <>
-//             <Breadcrumb pageTitle='Career'/>
-//             {/* <Categories/> */}
-//             {/* <Courses/> */}
-//             <CareersSection />
-//         </>
-//     );
-// };
-
-// export default CareerDetailsMain;
-
-
+"use client"
 import Link from "next/link";
-import React from "react";
+import { useSearchParams } from "next/navigation";
+import React, { useEffect, useState, ChangeEvent, FormEvent } from 'react';
+
 
 const CareerDetailsMain = () => {
-    //   const courseData = [
-    //     {
-    //       id: 1,
-    //       title: "Web Designer",
-    //       subTitle: "Full Time",
-    //       details:
-    //         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium doloremque laudantium totam rem aperiam",
-    //     },
-    //     {
-    //       id: 2,
-    //       title: "Web Developer",
-    //       subTitle: "Part  Time",
-    //       details:
-    //         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium doloremque laudantium totam rem aperiam",
-    //     },
-    //     {
-    //       id: 3,
-    //       title: "SEO Optimization",
-    //       subTitle: "Full Time",
-    //       details:
-    //         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium doloremque laudantium totam rem aperiam",
-    //     },
-    //     {
-    //       id: 4,
-    //       title: "IT Marketing",
-    //       subTitle: "Part  Time",
-    //       details:
-    //         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium doloremque laudantium totam rem aperiam",
-    //     },
-    //     {
-    //       id: 5,
-    //       title: "IT Consultant",
-    //       subTitle: "Full Time",
-    //       details:
-    //         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium doloremque laudantium totam rem aperiam",
-    //     },
-    //     {
-    //       id: 6,
-    //       title: "Computer Engineer",
-    //       subTitle: "Part Time",
-    //       details:
-    //         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusa ntium doloremque laudantium totam rem aperiam",
-    //     },
-    //   ];
+
+
+    const [response, setResponse] = useState(null);
+    const searchParams = useSearchParams();
+    const id = searchParams.get('id');
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        job_id: id,
+        comment: " ",
+        resume: null
+    });
+
+    // State to store job details
+    const [job, setJob] = useState(null);
+
+    // Fetch job details using the job ID
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                // Fetch job details from the API
+                const response = await fetch('https://old.mpinfotech.com/api/getJobs', {
+                    method: 'POST',
+                });
+                const data = await response.json();
+                const jobList = data.jobList;
+
+                if (id) {
+                    console.log("id ", id);
+                    // Filter the job details based on the ID from the URL
+                    const selectedJob = jobList.find(job => job.job_id == id);
+                    setJob(selectedJob);
+                }
+            } catch (error) {
+                console.error('Error fetching job details:', error);
+
+            }
+        }
+
+        fetchData();
+    }, [id]);
+
+    if (!job) {
+        return <div>Loading...</div>;
+    }
+
+
+
+    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        const { name, value, files } = e.target;
+
+
+        let newValue = value;
+
+        // Perform validation for mobile number
+        if (name === "phone") {
+            // Ensure only numbers are entered for mobile
+            newValue = value.replace(/\D/g, '');
+            // Limit mobile number to 10 digits
+            newValue = newValue.slice(0, 10);
+        }
+
+        // Perform validation for email
+        if (name === "email") {
+            // Regular expression for email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(value)) {
+                // Invalid email, you can show a message or perform some action
+                console.log("Invalid email");
+                return;
+            }
+        }
+
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [name]: files ? files[0] : newValue
+        }));
+    };
+
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const form = e.target as HTMLFormElement;
+        const formDataObject = new FormData(form);
+        // Set the job_id from the URL parameter to the form data
+        formDataObject.append('job_id', id);
+
+        try {
+            const response = await fetch('https://old.mpinfotech.com/api/application', {
+                method: 'POST',
+                body: formDataObject,
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log('Success:', data);
+                // Set response state if needed
+                setResponse(data);
+            } else {
+                // Log error if response is not ok
+                console.error('Error:', response.statusText);
+                console.log('Failed to submit data.');
+            }
+        } catch (error) {
+            // Log error if there's an exception during fetch
+            console.error('Error:', error);
+            console.log('Failed to submit data.');
+        }
+
+        // Clear the form after submission
+        form.reset();
+
+        // Clear form state after submission
+        setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            job_id: "",
+            comment: "",
+            resume: null
+        });
+    };
+
+
+
 
     return (
         <>
@@ -77,9 +143,28 @@ const CareerDetailsMain = () => {
                         <div className="single-blog-post">
 
                             <br />
-                            <div className="">
+
+                            <div key={job.job_id} className="">
+
+                                <span>{job.job_country}</span>
+                                <h3>{job.job_title}</h3>
+                                <p><b>Project Role : </b>{job.job_cat_ref_id} </p>
+                                <p> <b> Project Role Description :</b> {job.job_short_desc}</p>
+                                <p> <b> Experience :</b> {job.job_exp}</p>
+                                <p>
+                                    <b>Summary: </b> {job.job_details} </p>
+
+
+                                {/* <span>Posted On : {job.job_date_added}</span>
+                                    <span>Job Type : {job.job_type}</span>
+                                    <p>{job.job_details}</p> */}
+
+                            </div>
+
+
+                            {/* <div className="">
                                 <span>
-                                    India    {/* location */}
+                                    4365, US Route-1 South,Suite 202, Princeton, NJ, 08540    {/* location */}{/*
                                 </span>
 
                                 <h3>
@@ -97,47 +182,61 @@ const CareerDetailsMain = () => {
                                 <p>
                                     <b>Summary: </b>As an Application Developer, you will be responsible for designing, building, and configuring applications to meet business process and application requirements using Oracle Hyperion Financial Management (HFM). Your typical day will involve working with HFM, developing and configuring applications, and collaborating with cross-functional teams to ensure successful project delivery. Roles & Responsibilities: A: Design, build, and configure applications using Oracle Hyperion Financial Management (HFM) to meet business process and application requirements. B: Collaborate with cross-functional teams to ensure successful project delivery, including working with business analysts, project managers, and other developers. C: Develop and configure applications using HFM, including creating and maintaining metadata, rules, and reports. D: Troubleshoot and resolve issues related to HFM applications, including performance tuning and optimization. Professional & Technical Skills: A: The candidate should have a minimum of 5 years of experience in Oracle Hyperion Financial Management (HFM). B: The ideal candidate will possess a strong educational background in finance, accounting, or a related field, along with a proven track record of delivering impactful solutions using HFM. C: Must To Have Skills: Experience with Oracle Hyperion Financial Management (HFM). D: Good To Have Skills: No Technology Specialization. E: Strong understanding of financial management and accounting principles. F: Experience with HFM application development, including creating and maintaining metadata, rules, and reports. G: Experience with troubleshooting and resolving issues related to HFM applications. H: Experience with performance tuning and optimization of HFM applications. Additional Information: A: This position is based at our Pune office.
                                 </p>
-                            </div>
+                            </div> */}
+
+
+                            <br />
                             <br />
 
-                            <br />
-                        </div>
+                            <div className="form-container">
+                                <h2>Apply Here</h2><br />
+                                <h4>Job Application Form</h4>
+                                {/* <form > */}
+                                <form onSubmit={handleSubmit}>
+                                    <div className="form-row">
+                                        <div className="form-group">
+                                            <label htmlFor="email">Name:</label>
+                                            <input
+                                                type="text"
+                                                id="name"
+                                                name="name"
+                                                placeholder="Name"
+                                                value={formData.name}
+                                                onChange={handleChange}
 
-
-                    </div>
-                    <div className="form-container">
-                        <h2>Job Application Form</h2>
-                        <form >
-                            {/* <form onSubmit={handleSubmit}> */}
-                            <div className="form-row">
-                                <div className="form-group">
-                                    <label htmlFor="firstName">Name:</label>
+                                                required
+                                            />
+                                        </div>
+                                        {/* <div className="form-group">
+                                    <label htmlFor="Name">Name:</label>
                                     <input
                                         type="text"
-                                        id="firstName"
-                                        name="firstName"
+                                        id="Name"
+                                        name="Name"
                                         placeholder="Name"
-                                        value=""
-                                        // value={formData.firstName}
-
-                                        // onChange={handleChange}
+                                        value={formData.name}
+                                        onChange={handleChange}
                                         required
                                     />
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="email">Email ID:</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        placeholder="Email"
-                                        value=""
+                                </div> */}
+                                    </div>
+                                    <div className="form-row">
 
-                                        required
-                                    />
-                                </div>
+                                        <div className="form-group">
+                                            <label htmlFor="email">Email ID:</label>
+                                            <input
+                                                type="email"
+                                                id="email"
+                                                name="email"
+                                                placeholder="Email"
+                                                value={formData.email}
+                                                onChange={handleChange}
 
-                                {/* <div className="form-group">
+                                                required
+                                            />
+                                        </div>
+
+                                        {/* <div className="form-group">
                                     <label htmlFor="lastName">Last Name:</label>
                                     <input
                                         type="text"
@@ -149,76 +248,113 @@ const CareerDetailsMain = () => {
                                     />
                                 </div> */}
 
+                                    </div>
+                                    <div className="form-row">
+
+                                        <div className="form-group">
+                                            <label htmlFor="phone">Mobile No:</label>
+                                            <input
+                                                type="tel"
+                                                id="phone"
+                                                name="phone"
+                                                placeholder="phone"
+                                                value={formData.phone}
+                                                onChange={handleChange}
+
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="form-row">
+
+                                        <div className="form-group">
+                                            <label htmlFor="comment">Comment:</label>
+                                            <input
+                                                type="text"
+                                                id="comment"
+                                                name="comment"
+                                                placeholder="comment"
+                                                value={formData.comment}
+                                                onChange={handleChange}
+
+                                                required
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="form-row">
+
+
+                                        <div className="form-group">
+                                            <label htmlFor="resume">Resume:</label>
+                                            <input
+                                                type="file"
+                                                id="resume"
+                                                name="resume"
+                                                onChange={handleChange}
+                                                accept=".pdf,.doc,.docx"
+                                                required
+                                            />
+                                        </div>
+
+                                        {/* <div className="form-group">
+                                            <label htmlFor="education">Highest Education:</label>
+                                            <input
+                                                type="text"
+                                                id="education"
+                                                name="education"
+                                                placeholder="Highest Education"
+                                                // value={formData.education}
+                                                // onChange={handleChange}
+                                                required
+                                            />
+                                        </div> */}
+                                    </div>
+                                    {/* <div className="form-row">
+
+                                        {/* <div className="form-group">
+                                            <label htmlFor="experience">Year of Experience:</label>
+                                            <input
+                                                type="number"
+                                                id="experience"
+                                                name="experience"
+                                                placeholder="Year of Experience"
+                                                // value={formData.experience}
+                                                // onChange={handleChange}
+                                                required
+                                            />
+                                        </div> 
+                                        <div className="form-group">
+                                            <label htmlFor="resume">Resume:</label>
+                                            <input
+                                                type="file"
+                                                id="resume"
+                                                name="resume"
+                                                // value={formData.resume}
+                                                // onChange={handleChange}
+                                                accept=".pdf,.doc,.docx"
+                                                required
+                                            />
+                                        </div> 
+
+                                    </div> */}
+
+
+                                    {/* Repeat similar form-row blocks for other input fields */}
+
+                                    {/* <button className="btn btn-primary" type="submit">Submit</button> */}
+                                    <div className="contact-btn">
+                                        <button className="btn" type="submit"><span className="btn-text">Submit <i className='fas fa-long-arrow-alt-righ'></i></span> <span className="btn-border"></span></button>
+                                    </div>
+                                </form>
                             </div>
-                            <div className="form-row">
 
-                                <div className="form-group">
-                                    <label htmlFor="mobile">Mobile No:</label>
-                                    <input
-                                        type="tel"
-                                        id="mobile"
-                                        name="mobile"
-                                        placeholder="Mobile"
-                                        value=""
-
-                                        required
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="education">Highest Education:</label>
-                                    <input
-                                        type="text"
-                                        id="education"
-                                        name="education"
-                                        value=""
-                                        placeholder="Highest Education"
-                                        // onChange={}
-                                        required
-                                    />
-                                </div>
-                            </div>
-                            <div className="form-row">
-                               
-
-                                <div className="form-group">
-                                    <label htmlFor="experience">Year of Experience:</label>
-                                    <input
-                                        type="number"
-                                        id="experience"
-                                        name="experience"
-                                        placeholder="Year of Experience"
-                                        value=""
-                                        // onChange={}
-                                        required
-                                    />
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="resume">Resume:</label>
-                                    <input
-                                        type="file"
-                                        id="resume"
-                                        name="resume"
-                                        // onChange={}
-                                        accept=".pdf,.doc,.docx"
-                                        required
-                                    />
-                                </div>
-
-                            </div>
-                            {/* <div className="form-row">
-                                
-
-                            </div> */}
-
-                            {/* Repeat similar form-row blocks for other input fields */}
-
-                            <button className="btn btn-primary" type="submit">Submit</button>
-                        </form>
-                    </div>
+                        </div>
 
 
-                </div>
-            </section>
+                    </div >
+
+                </div >
+            </section >
         </>
     );
 };

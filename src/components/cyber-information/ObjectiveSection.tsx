@@ -22,12 +22,12 @@ const ObjectiveSection = () => {
 
             <h3 >Our Pen Testing Offers</h3>
             <span className="animate-border" style={{ width: 65 }}></span>
-            
+
           </div>
 
           <div className="row pb-30 " >
             <div className="col-lg-6 cyber-box " >
-              <div className="objective-box" style={{backgroundColor : "#AAC2C3"}} >
+              <div className="objective-box" style={{ backgroundColor: "" }} >
                 <div className="widget-title-box mb-30" >
                   <div >
                     <Image style={{ height: "100%", paddingRight: 15 }} src={imgOne} alt="" />
@@ -40,12 +40,12 @@ const ObjectiveSection = () => {
                     <h5 style={{ color: "#695ce8" }}>01</h5>
                     <h5 style={{ color: "#695ce8" }}>Basics</h5>
                   </div>
-                  <p>Includes automated scans and manual testing to identify high-risk vulnerabilities in web applications and web services. Focuses on exploratory risk analysis (e.g., anti-automation, complex authentication).</p>
+                  <p style={{color:"black"}}>Includes automated scans and manual testing to identify high-risk vulnerabilities in web applications and web services. Focuses on exploratory risk analysis (e.g., anti-automation, complex authentication).</p>
                 </div>
               </div>
             </div>
             <div className="col-lg-6 " >
-              <div className="objective-box" style={{backgroundColor : "#AAC2C3"}} >
+              <div className="objective-box" style={{ backgroundColor: "" }} >
                 <div className="widget-title-box mb-30" >
                   <div >
                     <Image style={{ height: "100%", paddingRight: 15 }} src={imgTwo} alt="" />
@@ -58,20 +58,20 @@ const ObjectiveSection = () => {
                     <h5 style={{ color: "#f47514" }}>02</h5>
                     <h5 style={{ color: "#f47514" }}>Standard</h5>
                   </div>
-                  <p>Essential Service plus business logic testing, which covers attacks outside a canned list or that may not have been considered otherwise (e.g., business logic data validation and integrity checks). Includes a manual review to identify false positives and a read-out call to explain findings.
+                  <p style={{color:"black"}}>Essential Service plus business logic testing, which covers attacks outside a canned list or that may not have been considered otherwise (e.g., business logic data validation and integrity checks). Includes a manual review to identify false positives and a read-out call to explain findings.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="services-text text-center">
-                    <Link href="https://www.mradar360.com">
-                        <span className="services-button">
-                            Our Products{" "}
-                            <i className="fas fa-long-arrow-alt-right"></i>
-                        </span>
-                    </Link>
-                </div >
+          {/* <div className="services-text text-center">
+            <Link href="https://www.mradar360.com">
+              <span className="services-button">
+                Our Products{" "}
+                <i className="fas fa-long-arrow-alt-right"></i>
+              </span>
+            </Link>
+          </div > */}
         </div>
       </section>
 

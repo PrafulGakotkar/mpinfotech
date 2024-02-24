@@ -1,6 +1,7 @@
 import { blogDataTwo } from "@/data/blog-data-two";
 import Image from "next/image";
 import imgOne from "../../../public/assets/img/product/Integrate-Security-into-DevOps.png";
+
 // import imgOne from "../../../public/assets/img/product/Cross-platform software-amico.png";
 import Link from "next/link";
 import React from "react";

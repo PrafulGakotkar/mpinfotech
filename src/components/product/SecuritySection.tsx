@@ -16,10 +16,9 @@ const SecuritySection = () => {
 
           <div className="row ">
             <div className="col-lg-6">
-
+              <h3>Features : </h3><br/>
               <div className="mb-40">
                 <div className="widget-title-box mb-30">
-                  <span className="animate-border"></span>
                   <h3 >Security & Governance</h3>
                 </div>
 
@@ -29,7 +28,6 @@ const SecuritySection = () => {
                 </div>
 
                 <div className="widget-title-box mb-30">
-                  <span className="animate-border"></span>
                   <h3 >Cost Management</h3>
                 </div>
 

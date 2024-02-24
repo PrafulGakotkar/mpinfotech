@@ -17,7 +17,7 @@ const ChallengeSection = () => {
            
             <section className="blog-area pt-10 pb-80 back-img" >
                 <div className="container">
-                    <div className="widget-title-box mb-30" style={{textAlign:"center"}}>
+                    <div className="widget-title-box mb-30 pt-40 text-center" /*style={{textAlign:"center"}}*/>
                         <h3 >Challenges & Solutions</h3>
                         <span className="animate-border" style={{width:65}}></span>
                     </div>
@@ -32,8 +32,8 @@ const ChallengeSection = () => {
                                 <p>The rapid adoption of multi-cloud deployments and demand for massive economies of scale, processing speed, and agility might result in: An organization needs to define the standards and controls to adhere to governance.</p>
                                 <ul>
                                     <li><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Measuring the compliance of the multi-cloud infrastructure.</li>
-                                    <li> <i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Lacking visibility into multi-cloud asset inventory.</li>
-                                    <li > <i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Lacking real-time activity and alerting for violations or configuration errors to provide visibility to remediate.</li>
+                                    <li><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Lacking visibility into multi-cloud asset inventory.</li>
+                                    <li><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Lacking real-time activity and alerting for violations or configuration errors to provide visibility to remediate.</li>
                                     <li><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Lacking cost management to find the value of the service.</li>
                                     <li><i className="fa fa-circle" style={{fontSize:"7px", color:"blue"}}></i> Lacking visibility into cloud</li>
                                 </ul>

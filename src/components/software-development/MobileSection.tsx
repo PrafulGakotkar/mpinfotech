@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import imgOne from "../../../public/assets/img/service/risks-in-mobile-application-development-industry.webp";
+import imgOne from "../../../public/assets/img/service/Top-Mobile-App-Development-Companies-in-UAE.png";
 
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ const MobileSection = () => {
         <>
 
 
-            <section className="blog-area pt-100 pb-5 " style={{backgroundColor:"#f6f6f6"}} >
+            <section className="blog-area pt-100 pb-5 " style={{backgroundColor:"#fff"}} >
                 <div className="container">
 
 

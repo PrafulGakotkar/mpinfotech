@@ -7,6 +7,7 @@ import ChallengeSection from './ChallengeSection';
 import ObjectiveSection from './ObjectiveSection';
 import ContactForm from '../contact/ContactForm';
 import ContactSection from '../home-two/ContactSection';
+import ItManagment from './ItManagement';
 
 
 
@@ -15,9 +16,10 @@ const BlogMain = () => {
         <>
             <Breadcrumb pageTitle='Our Product'/>
             <BlogSection/>
-            <SecuritySection />
-            <CloudSection />
             <ChallengeSection />
+            {/* <SecuritySection /> */}
+            <ItManagment />
+            {/* <CloudSection /> */}
             <ObjectiveSection />
             <ContactSection />
         </>

@@ -61,8 +61,16 @@ const HeaderOne = () => {
                 id="right-header"
                 className="col-xl-9 col-lg-9 col-md-6 col-4"
               >
-                <div className="header-button f-right d-none d-xl-block">
+                {/* <div className="header-button f-right d-none d-xl-block">
                   <Link className="btn" href="/goals">
+                    <span className="btn-text">
+                      Contact Us{" "}
+                      <i className="fas fa-long-arrow-alt-right"></i>
+                    </span>
+                  </Link>
+                </div> */}
+                <div className="header-button f-right d-none d-xl-block">
+                  <Link className="btn" href="/contact">
                     <span className="btn-text">
                       Consultancy{" "}
                       <i className="fas fa-long-arrow-alt-right"></i>

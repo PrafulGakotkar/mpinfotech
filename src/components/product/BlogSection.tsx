@@ -1,6 +1,8 @@
 import React from "react";
 import ArticleLayout from "./ArticleLayout";
+import imgTwo from "../../../public/assets/img/bg/Data_security_05.jpg";
 import imgOne from "../../../public/assets/img/product/Logo_transparent.webp";
+// import imgTwo from "../../../public/assets/img/product/Integrate-Security-into-DevOps.png";
 import Image from "next/image";
 import Link from "next/link";
 import thumbOne from "../../../public/assets/img/blog/details/banner.jpg";
@@ -13,11 +15,9 @@ const BlogSection = () => {
       <section className="blog-area pt-120 pb-80">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
-              <ArticleLayout />
-            </div>
 
-            <div className="col-lg-6">
+
+            <div className="col-lg-8">
 
               <div className=" mb-40">
                 <div className="widget-title-box mb-30">
@@ -29,8 +29,8 @@ const BlogSection = () => {
                       color: "transparent",
                       width: 100,
                       backgroundColor: "#67a7a7",
-                      boxShadow:"0px 0px 5px 5px lightblue",
-                      borderRadius:8
+                      boxShadow: "0px 0px 5px 5px lightblue",
+                      borderRadius: 8
                     }}
                     src={imgOne}
                     alt="blog image"
@@ -163,6 +163,18 @@ const BlogSection = () => {
                   </Link>
                 </div>
               </div> */}
+            </div>
+
+            <div className="col-lg-4">
+              {/* <ArticleLayout /> */}
+              <div>
+                <Image
+                  className="product-img"
+                  /*style={{ width: "100%", height: "530px", paddingTop: 50 }}*/
+                  src={imgTwo}
+                  alt="blog image"
+                />
+              </div>
             </div>
           </div>
 

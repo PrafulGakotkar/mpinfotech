@@ -30,7 +30,7 @@ const ObjectiveSection = () => {
           </div>
 
           <div className="row pb-30 " >
-            <div className="col-lg-6 pl-65 " /*style={{ paddingLeft: 65 }}*/>
+            <div className="col-lg-6 pl-65  " /*style={{ paddingLeft: 65 }}*/>
               <div className="objective-box" >
                 <div className="widget-title-box mb-30" >
                   <div >
@@ -44,11 +44,11 @@ const ObjectiveSection = () => {
                     <h5 style={{color:"#695ce8"}}>01</h5>
                     <h5 style={{color:"#695ce8"}}>Strategy</h5>
                   </div>
-                  <p>TOrganization(s) should mandate that security investments, services, and infrastructure in the cloud are executed to achieve established business goals (e.g., market competitiveness, financial, or operational performance).</p>
+                  <p>Organization(s) should mandate that security investments, services, and infrastructure in the cloud are executed to achieve established business goals (e.g., market competitiveness, financial, or operational performance).</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 " >
+            <div className="col-lg-6 mar " >
               <div className="objective-box" >
                 <div className="widget-title-box mb-30" >
                   <div >
@@ -88,7 +88,7 @@ const ObjectiveSection = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 " >
+            <div className="col-lg-6 mar " >
               <div className="objective-box" >
                 <div className="widget-title-box mb-30" >
                   <div >
@@ -144,6 +144,13 @@ const ObjectiveSection = () => {
               MRADAR Security & Governance platform can empower you to make informed decisions with respect to your cloud infrastructure.
               </p>
             </div>
+            <div className="read-more mt-30 btn">
+                    <Link href={`https://www.mradar360.com`}>
+                      <span className="btn-text">
+                        Get Started <i className="fas fa-long-arrow-alt-right"></i>
+                      </span>
+                    </Link>
+                  </div>
           </div>
 
          

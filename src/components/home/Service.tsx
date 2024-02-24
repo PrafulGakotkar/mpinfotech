@@ -130,11 +130,11 @@ const Service = () => {
         <div className="container">
           <div className="row">
             <div className="col-xl-6 col-lg-6 mb-30">
-              <div className="about-text">
-                <span>why choose us</span>
-                <h3>
+              <div className="about-text" style={{margin:0 }}>
+                <span>why choose us</span><br/>
+                <h1>
                   WELCOME TO MPIT
-                </h3>
+                </h1>
 
                 <p>
                   We have created a strategic partnership with leading technology companies and combined this partnership with our industry-experienced teams, best practices, and processes to help our clients to maximize the IT investment and time to market.
