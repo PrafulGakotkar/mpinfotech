@@ -4,6 +4,17 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import React, { useEffect, useState, ChangeEvent, FormEvent } from 'react';
 
+interface Job {
+    job_id: string;
+    job_cat_ref_id:string;
+    job_title:string;
+    job_short_desc:string;
+    job_country:string;
+    job_exp:string;
+    job_details:string;
+    // Define other properties here
+}
+
 
 const CareerDetailsMain = () => {
 
@@ -11,6 +22,7 @@ const CareerDetailsMain = () => {
     const [response, setResponse] = useState(null);
     const [successMessage, setSuccessMessage] = useState("");
     const [failureMessage, setFailureMessage] = useState("");
+    const [job, setJob] = useState<Job | null>(null);
     const searchParams = useSearchParams();
     const id = searchParams.get('id');
 
@@ -24,7 +36,7 @@ const CareerDetailsMain = () => {
     });
 
     // State to store job details
-    const [job, setJob] = useState(null);
+
 
     // Fetch job details using the job ID
     useEffect(() => {
@@ -35,14 +47,19 @@ const CareerDetailsMain = () => {
                     method: 'POST',
                 });
                 const data = await response.json();
-                const jobList = data.jobList;
+                // const jobList = data.jobList;
+                const jobList: Job[] = data.jobList;
 
 
                 if (id) {
                     console.log("id ", id);
                     // Filter the job details based on the ID from the URL
                     const selectedJob = jobList.find(job => job.job_id == id);
-                    setJob(selectedJob);
+                    if (selectedJob) {
+                        setJob(selectedJob);
+                    } else {
+                        setJob(null); // Set job to null if selectedJob is undefined
+                    }
                 }
             } catch (error) {
                 console.error('Error fetching job details:', error);
@@ -60,10 +77,19 @@ const CareerDetailsMain = () => {
 
 
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-        const { name, value, files } = e.target;
+        const { name, value } = e.target;
 
 
-        let newValue = value;
+        let newValue: string | File | null;
+        // Check if the input element is a file input
+        if (e.target instanceof HTMLInputElement && e.target.type === 'file') {
+            // For file inputs, use the `files` property
+            const files = e.target.files;
+            newValue = files ? files[0] : null;
+        } else {
+            newValue = value;
+        }
+
 
         // Perform validation for mobile number
         if (name === "phone") {
@@ -86,7 +112,7 @@ const CareerDetailsMain = () => {
 
         setFormData((prevFormData) => ({
             ...prevFormData,
-            [name]: files ? files[0] : newValue
+            [name]: newValue
         }));
     };
 
@@ -95,7 +121,9 @@ const CareerDetailsMain = () => {
         const form = e.target as HTMLFormElement;
         const formDataObject = new FormData(form);
         // Set the job_id from the URL parameter to the form data
-        formDataObject.append('job_id', id);
+        if (id !== null) {
+            formDataObject.append('job_id', id);
+        }
 
         try {
             const response = await fetch('https://old.mpinfotech.com/api/application', {
@@ -107,12 +135,12 @@ const CareerDetailsMain = () => {
                 const data = await response.json();
                 console.log('Success:', data);
                 // Set success message
-                setSuccessMessage(`${formData.name} Application submitted successfully...`);
+                setSuccessMessage(`Congratulations... ${formData.name} Application submitted successfully...`);
                 // Clear form
                 form.reset();
             } else {
                 // Set failure message
-                setFailureMessage("Failed to submit data. Please try again later...");
+                setFailureMessage(" Failed to submit your application. Please try again later...");
             }
         } catch (error) {
             // Set failure message
@@ -195,8 +223,8 @@ const CareerDetailsMain = () => {
                             <br />
 
                             <div className="form-container">
-                                {successMessage && <div className="success-message text-center">{successMessage}</div>}
-                                {failureMessage && <div className="failure-message">{failureMessage}</div>}
+                                {successMessage && <div className="success-message text-center" style={{fontSize:18}}>{successMessage}</div>}
+                                {failureMessage && <div className="failure-message" style={{fontSize:18}}>{failureMessage}</div>}
                                 <h2>Apply Here</h2><br />
                                 <h4>Job Application Form</h4>
                                 {/* <form > */}

@@ -11,8 +11,21 @@ import thumbEight from "../../../public/assets/img/carrer/08.png";
 import Link from "next/link";
 import Image from "next/image";
 
+interface Job {
+    job_id: string;
+    job_cat_ref_id:string;
+    job_title:string;
+    job_short_desc:string;
+    job_country:string;
+    job_exp:string;
+    job_details:string;
+    job_date_added:string;
+    job_type:string;
 
-const JobCard = ({ job }) => (
+    // Define other properties here
+}
+
+const JobCard = ({ job }: { job: Job }) => (
     
     <div className="col-lg-4 col-md-4">
         <div className="single-blog-post">
@@ -77,11 +90,12 @@ const CareersSection = () => {
         fetchData();
     }, []);
 
-    const groupedJobs = jobList.reduce((acc, job, index) => {
+    const groupedJobs = jobList.reduce((acc: Job[][], job, index) => {
         const rowIndex = Math.floor(index / 3);
         acc[rowIndex] = [...(acc[rowIndex] || []), job];
         return acc;
     }, []);
+    
 
     return (
         <section className="career-cat-area pt-120 pb-90">
