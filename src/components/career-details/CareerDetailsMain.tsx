@@ -9,6 +9,8 @@ const CareerDetailsMain = () => {
 
 
     const [response, setResponse] = useState(null);
+    const [successMessage, setSuccessMessage] = useState("");
+    const [failureMessage, setFailureMessage] = useState("");
     const searchParams = useSearchParams();
     const id = searchParams.get('id');
 
@@ -34,6 +36,7 @@ const CareerDetailsMain = () => {
                 });
                 const data = await response.json();
                 const jobList = data.jobList;
+
 
                 if (id) {
                     console.log("id ", id);
@@ -103,19 +106,20 @@ const CareerDetailsMain = () => {
             if (response.ok) {
                 const data = await response.json();
                 console.log('Success:', data);
-                // Set response state if needed
-                setResponse(data);
+                // Set success message
+                setSuccessMessage(`${formData.name} Application submitted successfully...`);
+                // Clear form
+                form.reset();
             } else {
-                // Log error if response is not ok
-                console.error('Error:', response.statusText);
-                console.log('Failed to submit data.');
+                // Set failure message
+                setFailureMessage("Failed to submit data. Please try again later...");
             }
         } catch (error) {
-            // Log error if there's an exception during fetch
+            // Set failure message
+            setFailureMessage("Failed to submit data. Please try again later...");
             console.error('Error:', error);
-            console.log('Failed to submit data.');
         }
-
+        console.log(response);
         // Clear the form after submission
         form.reset();
 
@@ -151,8 +155,10 @@ const CareerDetailsMain = () => {
                                 <p><b>Project Role : </b>{job.job_cat_ref_id} </p>
                                 <p> <b> Project Role Description :</b> {job.job_short_desc}</p>
                                 <p> <b> Experience :</b> {job.job_exp}</p>
-                                <p>
-                                    <b>Summary: </b> {job.job_details} </p>
+                                <div><b>Summary: </b><div dangerouslySetInnerHTML={{ __html: job.job_details }} /></div>
+                                {/* <p><b>Summary: </b>{JSON.stringify(job.job_details)}</p> */}
+                                {/* <p> <b>Summary: </b> {job.job_details} </p> */}
+
 
 
                                 {/* <span>Posted On : {job.job_date_added}</span>
@@ -189,6 +195,8 @@ const CareerDetailsMain = () => {
                             <br />
 
                             <div className="form-container">
+                                {successMessage && <div className="success-message text-center">{successMessage}</div>}
+                                {failureMessage && <div className="failure-message">{failureMessage}</div>}
                                 <h2>Apply Here</h2><br />
                                 <h4>Job Application Form</h4>
                                 {/* <form > */}
@@ -207,21 +215,6 @@ const CareerDetailsMain = () => {
                                                 required
                                             />
                                         </div>
-                                        {/* <div className="form-group">
-                                    <label htmlFor="Name">Name:</label>
-                                    <input
-                                        type="text"
-                                        id="Name"
-                                        name="Name"
-                                        placeholder="Name"
-                                        value={formData.name}
-                                        onChange={handleChange}
-                                        required
-                                    />
-                                </div> */}
-                                    </div>
-                                    <div className="form-row">
-
                                         <div className="form-group">
                                             <label htmlFor="email">Email ID:</label>
                                             <input
@@ -236,19 +229,8 @@ const CareerDetailsMain = () => {
                                             />
                                         </div>
 
-                                        {/* <div className="form-group">
-                                    <label htmlFor="lastName">Last Name:</label>
-                                    <input
-                                        type="text"
-                                        id="lastName"
-                                        name="lastName"
-                                        value=""
-                                     
-                                        required
-                                    />
-                                </div> */}
-
                                     </div>
+
                                     <div className="form-row">
 
                                         <div className="form-group">
@@ -264,9 +246,6 @@ const CareerDetailsMain = () => {
                                                 required
                                             />
                                         </div>
-                                    </div>
-                                    <div className="form-row">
-
                                         <div className="form-group">
                                             <label htmlFor="comment">Comment:</label>
                                             <input
@@ -280,7 +259,11 @@ const CareerDetailsMain = () => {
                                                 required
                                             />
                                         </div>
+
+
+
                                     </div>
+
                                     <div className="form-row">
 
 
@@ -296,47 +279,9 @@ const CareerDetailsMain = () => {
                                             />
                                         </div>
 
-                                        {/* <div className="form-group">
-                                            <label htmlFor="education">Highest Education:</label>
-                                            <input
-                                                type="text"
-                                                id="education"
-                                                name="education"
-                                                placeholder="Highest Education"
-                                                // value={formData.education}
-                                                // onChange={handleChange}
-                                                required
-                                            />
-                                        </div> */}
                                     </div>
-                                    {/* <div className="form-row">
 
-                                        {/* <div className="form-group">
-                                            <label htmlFor="experience">Year of Experience:</label>
-                                            <input
-                                                type="number"
-                                                id="experience"
-                                                name="experience"
-                                                placeholder="Year of Experience"
-                                                // value={formData.experience}
-                                                // onChange={handleChange}
-                                                required
-                                            />
-                                        </div> 
-                                        <div className="form-group">
-                                            <label htmlFor="resume">Resume:</label>
-                                            <input
-                                                type="file"
-                                                id="resume"
-                                                name="resume"
-                                                // value={formData.resume}
-                                                // onChange={handleChange}
-                                                accept=".pdf,.doc,.docx"
-                                                required
-                                            />
-                                        </div> 
 
-                                    </div> */}
 
 
                                     {/* Repeat similar form-row blocks for other input fields */}

@@ -148,6 +148,16 @@
   padding:30px;
    background-color: powderblue;
 }
+.inPageNav::-webkit-scrollbar{
+  inPageNav {
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    padding: 30px;
+    top: 102px;
+    background-color: powderblue;
+}
+}
 
 .objective-box {
   display: flex;
@@ -362,11 +372,11 @@
 //form 
 
 .form-container {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
-  padding: 20px;
-  // border: 1px solid #ccc;
-  // border-radius: 8px;
+  padding: 70px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
   // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* margin-top: 100px; */
   margin-bottom: 50px;
