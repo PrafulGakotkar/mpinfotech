@@ -24,7 +24,7 @@ const CyberInformationMain = () => {
             {/* <div id='section1'> <ProjectSection /> </div> */}
             <div id='section2'><Section2 /></div>
             <CounterDefault1 />
-            <div id='section3'><PenetrationTesting /></div>
+            <div id='data-warehouse-modernization'><PenetrationTesting /></div>
             <div id='section4'><OfferingSection /></div>
             {/* <div id=''><CloudSecuritySection /></div> */}
             <UniqueMDM />

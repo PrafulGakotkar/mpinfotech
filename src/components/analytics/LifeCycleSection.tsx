@@ -13,7 +13,7 @@ import img2 from "../../../public/assets/img/new/process mining.ed294ea7.jpg";
 const UniqueMDM = () => {
     return (
         <>
-            <section className="blog-area pt-40 pb-5 back-img" >
+            <section id="sec_modern_data" className="blog-area pt-40 pb-5 back-img" >
                 <div className="container">
 
                     <div className="row ">
@@ -72,7 +72,7 @@ const UniqueMDM = () => {
                 </div>
             </section>
 
-            <section className="blog-area pt-40 pb-5 back-img" >
+            <section id="sec_ai_ml" className="blog-area pt-40 pb-5 back-img" >
                 <div className="container">
 
                     <div className="row ">
@@ -131,7 +131,7 @@ const UniqueMDM = () => {
                 </div>
             </section>
 
-            <section className="blog-area pt-40 pb-5 back-img" >
+            <section id="sec_process_mining" className="blog-area pt-40 pb-5 back-img" >
                 <div className="container">
 
                     <div className="row ">

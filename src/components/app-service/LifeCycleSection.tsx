@@ -13,7 +13,7 @@ import img2 from "../../../public/assets/img/new/micro services.b8327b00.jpg";
 const LifeCycleSection = () => {
     return (
         <>
-            <section className="blog-area pt-40 pb-5 back-img" >
+            <section id="sec_reactive" className="blog-area pt-40 pb-5 back-img" >
                 <div className="container">
 
                     <div className="row ">
@@ -71,7 +71,7 @@ const LifeCycleSection = () => {
                 </div>
             </section>
 
-            <section className="blog-area pt-40 pb-5 back-img" >
+            <section id="sec_mobile" className="blog-area pt-40 pb-5 back-img" >
                 <div className="container">
 
                     <div className="row ">
@@ -128,7 +128,7 @@ const LifeCycleSection = () => {
                 </div>
             </section>
 
-            <section className="blog-area pt-40 pb-5 back-img" >
+            <section id="sec_micro" className="blog-area pt-40 pb-5 back-img" >
                 <div className="container">
 
                     <div className="row ">

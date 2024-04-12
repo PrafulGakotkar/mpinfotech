@@ -19,7 +19,7 @@ const PenetrationTesting = () => {
 
 
   return (
-    <div className="gallery-area  pb-10">
+    <div id="sec_data_warehouse" className="gallery-area  pb-10">
 
 
 

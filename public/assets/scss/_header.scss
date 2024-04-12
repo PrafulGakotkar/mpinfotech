@@ -338,7 +338,7 @@ padding-right: 45px;
 //   position: relative;
   position: absolute;
   top: 120%;
-  transition: all 0.3s ease 0s;
+  transition: all 3s ease 0s;
   visibility: hidden;
   width: 220px;
   z-index: 9;
@@ -380,13 +380,14 @@ padding-right: 45px;
 	position: relative;
 	// position: absolute;
 	top: 0%;
-	transition: all 0.3s ease 0s;
+	transition: all 2s ease 0s;
 	visibility: hidden;
 	width: 220px;
 	z-index: 9;
 	border-bottom:3px solid $theme-color;
 	text-align: left;
-	margin-left: 220px;
+	// margin-left: 220px;
+	background: #f2f1fa;
   }
   .main-menu nav > ul  > li:hover .sub-menu1{opacity:1;top:5%;visibility:visible}
   .main-menu nav > ul  > li .sub-menu1 li{display:block}

@@ -11,7 +11,7 @@ import imgSeven from "../../../public/assets/img/service/home_img-01.png";
 const UniqueMDM = () => {
   return (
     <>
-      <section className="blog-area pt-40 pb-5 back-img" >
+      <section id="sec_unique_mdm" className="blog-area pt-40 pb-5 back-img" >
         <div className="container">
 
           <div className="row ">

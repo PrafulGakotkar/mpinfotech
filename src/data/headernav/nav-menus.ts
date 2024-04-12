@@ -23,22 +23,22 @@ const navMenuData: MenuItem[] = [
           {
             id: 31,
             label: "Data Warehouse Modernization",
-            link: "/#data-warehouse-modernization",
+            link: "/data-engineering/#sec_data_warehouse",
           },
           {
             id: 32,
             label: "Real Time Analytics",
-            link: "/real-time-analytics",
+            link: "/data-engineering/#sec_analytics",
           },
           {
             id: 33,
             label: "Data Governance & Observability",
-            link: "/data-governance-observability",
+            link: "/data-engineering/#sec_data_governance",
           },
           {
             id: 34,
             label: "Unique MDM Implementation",
-            link: "/unique-mdm-implementation",
+            link: "/data-engineering/#sec_unique_mdm",
           },
         ],
       },
@@ -102,17 +102,17 @@ const navMenuData: MenuItem[] = [
           {
             id: 41,
             label: "Modern Data Analytics",
-            link: "/modern-data-analytics",
+            link: "/analytics/#sec_modern_data",
           },
           {
             id: 42,
             label: "AI / ML",
-            link: "/ai-ml",
+            link: "/analytics/#sec_ai_ml",
           },
           {
             id: 43,
             label: "Process Mining Analytics",
-            link: "/process-mining-analytics",
+            link: "/analytics/#sec_process_mining",
           },
         ],
       },
@@ -120,34 +120,49 @@ const navMenuData: MenuItem[] = [
         id: 16,
         label: "App Services",
         link: "/app-service",
+        hasDropdown: true,
+        sub_Menu: [
+          {
+            id: 41,
+            label: "Reactive & Progressive Web Apps",
+            link: "/app-service/#sec_reactive",
+          },
+          {
+            id: 42,
+            label: "Mobile Apps Development",
+            link: "/app-service/#sec_mobile",
+          },
+          {
+            id: 43,
+            label: "Micro Services",
+            link: "/app-service/#sec_micro",
+          },
+        ],
       },
       {
         id: 17,
         label: "IT Services",
         link: "/it-service",
+        hasDropdown: true,
+        sub_Menu: [
+          {
+            id: 41,
+            label: "AWS/Azure/CGP",
+            link: "/it-service/#sec_aws",
+          },
+          {
+            id: 42,
+            label: "DBA As Service",
+            link: "/it-service/#sec_dba",
+          },
+          
+        ],
       },
       {
         id: 30,
         label: "Management Service",
         link: "/management-service",
-        hasDropdown: true,
-        sub_Menu: [
-          {
-            id: 41,
-            label: "Modern Data Analytics",
-            link: "/modern-data-analytics",
-          },
-          {
-            id: 42,
-            label: "AI / ML",
-            link: "/ai-ml",
-          },
-          {
-            id: 43,
-            label: "Process Mining Analytics",
-            link: "/process-mining-analytics",
-          },
-        ],
+        
       },
     ],
   },
