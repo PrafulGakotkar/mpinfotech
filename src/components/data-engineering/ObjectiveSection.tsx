@@ -59,7 +59,7 @@ const ObjectiveSection = () => {
                     {/* <h5 style={{ color: "#f47514" }}>02</h5> */}
                     <h5 style={{ color: "#695ce8" }}>Data Governance & Data Observability platform setup services</h5>
                   </div>
-                  <p style={{color:"black"}}>At Cyber Space Technologies,we understand the critical importance of data governance and observability in today's data-driven world. As businesses continue to rely on vast amounts of data for decision-making, ensuring the integrity, security, and accessibility of that data is paramount.
+                  <p style={{color:"black"}}>At Cyber Space Technologies,we understand the critical importance of data governance and observability in today&apos;s data-driven world. As businesses continue to rely on vast amounts of data for decision-making, ensuring the integrity, security, and accessibility of that data is paramount.
 </p>
                 </div>
               </div>
@@ -77,7 +77,7 @@ const ObjectiveSection = () => {
                 <div className="mb-40 ">
                   <div>
                     {/* <h5 style={{ color: "#f47514" }}>02</h5> */}
-                    <h5 style={{ color: "#695ce8" }}>Unique MDM Implementation expertise's</h5>
+                    <h5 style={{ color: "#695ce8" }}>Unique MDM Implementation expertise&apos;s</h5>
                   </div>
                   <p style={{color:"black"}}>At Cyber Space Technologies, we pride ourselves on offering unparalleled expertise in Master Data Management (MDM) implementation. With years of experience and a proven track record of successful projects, we stand as leaders in the field, delivering tailored solutions to meet the unique needs of each client.
 </p>

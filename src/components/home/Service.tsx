@@ -5,7 +5,7 @@ import Link from "next/link";
 import { serviceDataTwo } from "@/data/service-data-two";
 import IconOne from "../../../public/assets/img/icon/icon-01.png"
 import IconTwo from "../../../public/assets/img/icon/icon-2.svg"
-import IconThree from "../../../public/assets/img/new/SATEESH-KUMAR-SEGU.c9b0ead8.jpg"
+import IconThree from "../../../public/assets/img/new/sateesh segu.jpg"
 import IconFour from "../../../public/assets/img/new/MURTY-DOKKA.b987eca4.jpg"
 const Service = () => {
   return (
@@ -87,11 +87,11 @@ const Service = () => {
               <div  className="col-xl-4 col-lg-4 col-md-6 mb-30">
                 <div className="services-wrapper text-center">
                   <div className="services-img">
-                    <Image style={{padding:0}} src={IconThree}  alt="" />
+                    <Image style={{padding:0, height:'50%', width:'60%'}} src={IconThree}  alt="" />
                   </div>
                   <div className="services-text text-center">
                     <h3>SATEESH KUMAR SEGU</h3>
-                    <p> Founder & CEO</p>
+                    <p className="text-center"> Founder & CEO</p>
                     {/* <Link style={{marginTop:50}} href="/cyber-information">
                       <span className="services-button">
                         read more{" "}

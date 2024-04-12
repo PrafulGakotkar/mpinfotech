@@ -22,7 +22,7 @@ const AboutService = () => {
             <h3 className="text-center">Hybrid Cloud solutions</h3>
             <h6 className="text-center">The sprint to multiple cloud environments has created challenges</h6>
             <div className="col-xl-6 col-lg-6 mt-35 mb-30 ">
-              <div className="about-2-img">
+              <div className="about-1-wrapper about-2-img">
                 <div className="  ">
                   <div className="about-services-img" >
                     <Image className="about-services-img" src={icon2} alt="img-data" />

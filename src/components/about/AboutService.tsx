@@ -43,7 +43,7 @@ const AboutService = () => {
                       <Image className="about-services-img" src={icon} alt="img-data" />
                     </div>
                     <div className="ml-35"> <h5>Efficient Methods of Approach that Have Already Been Proven Effective</h5>
-                      <p >Clients come to us because of our expertise in data and analytics, digital transformation, and cyber security. The company offers a comprehensive range of solutions and services that help organizations make data-driven decisions, optimize their digital operations, and protect against cyber threats. The company's solutions are cutting-edge and tailored to meet the specific needs of each client.</p></div>
+                      <p >Clients come to us because of our expertise in data and analytics, digital transformation, and cyber security. The company offers a comprehensive range of solutions and services that help organizations make data-driven decisions, optimize their digital operations, and protect against cyber threats. The company&apos;s solutions are cutting-edge and tailored to meet the specific needs of each client.</p></div>
                   </div>
 
                   <div className="mt-35">
@@ -52,7 +52,7 @@ const AboutService = () => {
                     </div>
                     <div className="ml-35">
                       <h5>Superb Abilities and Expertise</h5>
-                      <p >The demands of a competitive market necessitate a highly complex transformation of the technology landscape; in response, our dedicated staff and consultants look beyond the status quo to create ground-breaking innovations and new collaborations. They take charge of your company's problems, rethinking the ways in which business solutions can open up new markets.</p>
+                      <p >The demands of a competitive market necessitate a highly complex transformation of the technology landscape; in response, our dedicated staff and consultants look beyond the status quo to create ground-breaking innovations and new collaborations. They take charge of your company&apos;s problems, rethinking the ways in which business solutions can open up new markets.</p>
                     </div>
                   </div>
 
@@ -63,7 +63,7 @@ const AboutService = () => {
                     <div className="ml-35">
                       <h5>Make Use Of Our Services And Benefit From Our Collaboration</h5>
 
-                      <p >Clients also value the company's team of experts, who are highly skilled and experienced in their respective fields. The company invests in research and development to stay at the forefront of data and analytics, digital transformation, and cyber security technologies. Clients trust the company to provide the best solutions and services to meet their needs, and to deliver measurable results and ROI.</p>
+                      <p >Clients also value the company&apos;s team of experts, who are highly skilled and experienced in their respective fields. The company invests in research and development to stay at the forefront of data and analytics, digital transformation, and cyber security technologies. Clients trust the company to provide the best solutions and services to meet their needs, and to deliver measurable results and ROI.</p>
                     </div>
                   </div>
 

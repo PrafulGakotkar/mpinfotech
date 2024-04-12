@@ -13,10 +13,10 @@ const About = () => {
                     <div className="row">
                         <div className="col-xl-6 col-lg-6 mb-30">
                             <div className="about-text mt-80" >
-                                <span>WELCOME TO CYBER SPACE TECHNOLOGIES</span>
+                                <span style={{fontSize:21}}>WELCOME TO CYBER SPACE TECHNOLOGIES</span>
                                 <h1>
-                                EXPLORE
-<span> INNOVATIONS  </span>HERE
+                                    EXPLORE
+                                    <span> INNOVATIONS  </span>HERE
                                 </h1>
                                 {/* <div>
                   <Typewriter
@@ -36,7 +36,9 @@ const About = () => {
                                 {/* <p>
                                     MP INFOTECH CORP (MPIT) is a leading professional IT service and solution company transforming clients’ businesses through various service offerings.
                                 </p> */}
-                                {/* <p>MP Infotech Corp (MPIT) is an IT service and solution company to enable our customer’s business through various service offerings like Cloud Transformation, Software development, and Cyber / Information Security. We have created strategic partnerships with leading technology companies like Amazon Web Service (AWS), Alertlogic, Force point and provide value-added services with our experience and best practices, helping our clients to maximize their IT investment and enable them to meet their “Time to Market” demands. Our multi-cloud security and governance platform, MRADAR® enables our customers to secure their data in the cloud.</p> */}
+                                <p style={{fontSize:18}}>We at <b> Cyber Space Technologies</b> fully understand the necessity of
+                                    data security and the significance of integrating and developing safe
+                                    applications without compromising functionality or business objectives.</p>
                                 {/* <Link href="/cyber-information">
                                     Our Services <i className="fas fa-long-arrow-alt-right"></i>
                                 </Link> */}

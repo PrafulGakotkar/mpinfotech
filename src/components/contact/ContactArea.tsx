@@ -45,7 +45,7 @@ const ContactArea = () => {
                                     Hyderabad, Telangana- 500081</p>
 
                                 <p> <i className='fas fa-phone'> </i> +91 8801152116</p>
-                                <p> <i className='fas fa-envelope-open'> </i> service@cyspacetech.com</p>
+                                <p> <i className='fas fa-envelope-open'> </i> service@cyspacetech.com</p><br/>
                             </div>
                         </div>
 

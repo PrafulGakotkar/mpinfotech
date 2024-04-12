@@ -21,15 +21,17 @@ import MobileMenu from "./MobileMenu";
 import logoImg from "../../../public/assets/img/logo/Cyber_Space_Technologies_LOGO.c7934d4e.png";
 
 const HeaderOne = () => {
+  const [hoveredMenu, setHoveredMenu] = useState<number | null>(null);
+const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
+
   const pathName = usePathname();
-  const { setOpenCart, setOpenWishlist, toggleSideMenu, toggleSubMenu, sideMenuOpen } =
+  const { setOpenCart, setOpenWishlist, toggleSideMenu,  sideMenuOpen } =
     useGlobalContext();
   const productQuantity = useUniqueProductCount();
   const wishlistQuantity = useUniqueWishlstCount();
 
   const [stickyHeader, setStickyHeader] = useState(false);
-  const [hoveredMenu, setHoveredMenu] = useState(null);
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  
 
   const handleScroll = () => {
     if (window.scrollY > 40) {
@@ -39,12 +41,14 @@ const HeaderOne = () => {
     }
   };
 
-  const handleMainMenuItemHover = (itemId) => {
+  const handleMainMenuItemHover = (itemId: number) => {
     setHoveredMenu(itemId);
-    setActiveDropdown(null);
+    setActiveDropdown( null); // Reset activeDropdown to null
   };
+  
+  
 
-  const handleSubMenuItemHover = (itemId) => {
+  const handleSubMenuItemHover = (itemId:number) => {
     setActiveDropdown(itemId);
   };
 
@@ -65,7 +69,7 @@ const HeaderOne = () => {
               <div className="col-xl-3 col-lg-3 col-md-6 col-8 d-flex align-items-center">
                 <div className="logo">
                   <Link href="/">
-                    <Image src={logoImg} width={170} height={100} alt="flag" />
+                    <Image src={logoImg} width={200} height={120} alt="flag" />
                   </Link>
                 </div>
               </div>

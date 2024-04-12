@@ -65,7 +65,7 @@ const itSecurity = () => {
                   <p style={{ paddingLeft: 30 }}>IT Security Penetration testing</p>
                 </div> */}
                 <div className="services-text">
-                  <Link href="/product">
+                  <Link href="/contact">
                     <span className="services-button">
                       FInd Out More{" "}
                       <i className="fas fa-long-arrow-alt-right"></i>
