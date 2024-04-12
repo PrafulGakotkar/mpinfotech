@@ -37,13 +37,13 @@ const AboutService = () => {
                 <div className="">
 
                   {/* <span>Our Vision</span> */}
-                  <h3>KEY MILESTONES</h3>
+                  <h3>WHY US</h3>
                   <div className="mt-35">
                     <div className="about-services-img" >
                       <Image className="about-services-img" src={icon} alt="img-data" />
                     </div>
-                    <div className="ml-35"> <h5>Year 2022, MRADAR V2.0</h5>
-                      <p >Planned release of MRADAR V 2.0 to enhance Cloud Transformation Security & Governance; Cost management; Multiplatform support.</p></div>
+                    <div className="ml-35"> <h5>Efficient Methods of Approach that Have Already Been Proven Effective</h5>
+                      <p >Clients come to us because of our expertise in data and analytics, digital transformation, and cyber security. The company offers a comprehensive range of solutions and services that help organizations make data-driven decisions, optimize their digital operations, and protect against cyber threats. The company's solutions are cutting-edge and tailored to meet the specific needs of each client.</p></div>
                   </div>
 
                   <div className="mt-35">
@@ -51,8 +51,8 @@ const AboutService = () => {
                       <Image className="about-services-img" src={icon1} alt="img-data" />
                     </div>
                     <div className="ml-35">
-                      <h5>Year 2016, MRADAR Ver 1.0,</h5>
-                      <p >Released MRADAR V 1.0 to enabled our customers for Cloud Transformation and limited governance capabilities and support for Amazon Web Services (AWS).</p>
+                      <h5>Superb Abilities and Expertise</h5>
+                      <p >The demands of a competitive market necessitate a highly complex transformation of the technology landscape; in response, our dedicated staff and consultants look beyond the status quo to create ground-breaking innovations and new collaborations. They take charge of your company's problems, rethinking the ways in which business solutions can open up new markets.</p>
                     </div>
                   </div>
 
@@ -61,9 +61,9 @@ const AboutService = () => {
                       <Image className="about-services-img" src={icon2} alt="img-data" />
                     </div>
                     <div className="ml-35">
-                      <h5>Year 2009, Incorporated</h5>
+                      <h5>Make Use Of Our Services And Benefit From Our Collaboration</h5>
 
-                      <p >In 2009 was incorporated as S-Corp to provide IT service focused in Cyber Security and Security Technology.</p>
+                      <p >Clients also value the company's team of experts, who are highly skilled and experienced in their respective fields. The company invests in research and development to stay at the forefront of data and analytics, digital transformation, and cyber security technologies. Clients trust the company to provide the best solutions and services to meet their needs, and to deliver measurable results and ROI.</p>
                     </div>
                   </div>
 

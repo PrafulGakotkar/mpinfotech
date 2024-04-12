@@ -15,8 +15,8 @@ const ChoseArea = () => {
                             <div className="section-title mb-45">
                                             {/* <span className="b-sm-left-1"></span>
                                             <span className="b-sm-left-2"></span> */}
-                                            <span className="">About Us</span>
-                                            <h1>Welcome to MP Infotech</h1>
+                                            <span className="">OUR COMPANY</span>
+                                            <h1>Our IT services ensure YourSuccess</h1>
                                         </div>
                                 <div className="col-xl-6 col-lg-6 mb-30">
                                     <div className="faq-wrapper">

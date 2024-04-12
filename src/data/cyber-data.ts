@@ -4,22 +4,40 @@ export const faqData: faqInterFace[] = [
 
   {
     id: 1,
-    title: "Black box penetration testing",
+    title: "Global Reach &  Scale",
     details:
-      "In a black box penetration test, no information is provided to the tester. In this instance, the pen tester follows an unprivileged attacker’s approach, from initial access and execution to exploitation. This scenario can be seen as the most authentic, demonstrating how an adversary with no inside knowledge would target and compromise an organization.",
+      "We serve customers in multiple countries, satisfying data and application requirements from a performance, security and regulatory perspective around the world.",
   },
   {
     id: 2,
-    title: "Grey box penetration testing",
+    title: "Multi-Cloud Experience",
     details:
-      "In a grey box penetration test, also known as a translucent box test (only limited information is shared with the tester). Usually, this takes the form of login credentials. Grey box testing helps understand the level of access a privileged user could gain and the potential damage they could cause. Grey box tests strike a balance between depth and efficiency and can simulate either an insider threat or an attack that has breached the network perimeter.",
+      "Cross-platform expertise across cloud, network and security. Flexible and modern agile engineering and support model across platforms.",
   },
   {
     id: 3,
-    title: "White box penetration testing",
+    title: "World-Class Security",
     details:
-      "White box penetration testing, sometimes called crystal or oblique box pen testing, involves sharing full network and system information with the tester, including network maps and credentials. This helps to save time and reduce the overall cost of an engagement. A white box penetration test is useful for simulating a targeted attack on a specific system utilizing as many attack vectors as possible.",
+      "Our security operations centres around the world give visibility of global threats .",
   },
-
+  {
+    id: 4,
+    title: "Leading Technology",
+    details:
+      "We provide access to the best technology and operational capabilities from global leaders like VMware, AWS, Microsoft, and Google.",
+  },
+  {
+    id: 5,
+    title: "Integration Expertise",
+    details:
+      "Our experts securely integrate infrastructure, networking services, application platforms, and multi-cloud services to bridge the gap between public and private cloud.",
+  },
+  {
+    id: 6,
+    title: "Single Source Solutions",
+    details:
+      "Simplify your operations with a single service experience, single invoice and single provider helping drive operational efficiencies.",
+  },
+  
 
 ];

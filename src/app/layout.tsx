@@ -16,7 +16,7 @@ export default function RootLayout({ children }: childrenType) {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title>MP Infotech</title>
+          <title>Cyber Space Technologies</title>
           {/* <link rel="icon" href="./favicon.png" type="image/icon"></link> */}
           {/* <link rel="icon" href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type="image/x-icon" /> */}
             {/* <link rel="png" href="/favicon.png" /> */}

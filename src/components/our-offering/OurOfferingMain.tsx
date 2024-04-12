@@ -1,6 +1,6 @@
 import Breadcrumb from '@/sheardComponent/Breadcrumb';
 import React from 'react';
-import OfferingSection from '../cyber-information/OfferingSection';
+import OfferingSection from '../data-engineering/OfferingSection';
 import OurOfferingSection from './OurOfferingSection';
 
 // import TechnologySection from './TechnologySection';

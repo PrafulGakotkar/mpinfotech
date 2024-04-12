@@ -4,6 +4,8 @@ import React, { FormEvent, ChangeEvent, useState } from 'react';
 const ContactForm = () => {
     const [authKey, setAuthKey] = useState('add');
     const [response, setResponse] = useState(null);
+    const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
 
     type FormData = {
         [key: string]: string;
@@ -51,12 +53,14 @@ const ContactForm = () => {
 
             const data = await response.json();
             setResponse(data);
+            setShowSuccessMessage(true);
             console.log('Success:', data);
         } catch (error) {
             console.error('Error:', error);
             console.log('Failed to submit data.');
+            setErrorMessage('Failed to submit your message please try again! ');
         }
-
+        
 
         // Display form data in the console
         console.log("Form Data:", Object.fromEntries(formDataObject));
@@ -74,6 +78,12 @@ const ContactForm = () => {
 
     return (
         <>
+        { showSuccessMessage ? ( // Conditional rendering based on the state
+                <div className="success-message text-center">
+                    <p style={{fontSize:20}}>Your message has been successfully submitted!, we will contact you soon!</p>
+                </div>
+            ) : ( 
+
             <div className="contact-2-area pt-120 pb-130">
                 <div className="container">
                     <div className="row">
@@ -131,6 +141,7 @@ const ContactForm = () => {
                                         <div className="contact-btn contact-2-btn text-center">
                                             <button className="btn" type="submit"><span className="btn-text">send message <i className='fas fa-long-arrow-alt-right'> </i></span> <span className="btn-border"></span></button>
                                         </div>
+                                        {errorMessage && <p className="text-danger">{errorMessage}</p>}
                                     </div>
                                 </div>
                             </form>
@@ -138,6 +149,7 @@ const ContactForm = () => {
                     </div>
                 </div>
             </div>
+            )}
         </>
     );
 };

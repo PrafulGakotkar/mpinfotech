@@ -42,12 +42,25 @@ export interface MenuItem {
   link: string;
   hasDropdown?: boolean;
   subMenu?: MenuItem[];
+  sub_Menu?: MenuItem[];
 }
 
 export interface faqInterFace {
   id: number;
   title: string;
   details: string;
+}
+export interface DataType {
+  tab_id: string;
+  tab_id_2: string;
+  question: string;
+  answer: {
+    title:string;
+    heading: string;
+    paragraph: string[];
+    subheading: string;
+    list: string[];
+  };
 }
 
 export interface projectType {

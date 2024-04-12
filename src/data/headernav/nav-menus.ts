@@ -6,165 +6,169 @@ const navMenuData: MenuItem[] = [
     label: "Home",
     link: "/",
     hasDropdown: false,
-    // hasDropdown: true,
-    // subMenu: [
-    //   {
-    //     id: 7,
-    //     label: "Home 1",
-    //     link: "/",
-    //   },
-    //   {
-    //     id: 8,
-    //     label: "Home 2",
-    //     link: "/home-2",
-    //   },
-    // ],
   },
   { id: 2, hasDropdown: false, label: "About Us", link: "/about" },
   {
     id: 3,
-    label: "IT Services",
+    label: "Our Services",
     link: "#",
     hasDropdown: true,
     subMenu: [
       {
-        id: 9,
-        label: "Cyber/Information Security",
-        link: "/cyber-information",
-        // link: "/service-1",
+        id: 11,
+        label: "Data Engineering",
+        link: "/data-engineering",
+        hasDropdown: true,
+        sub_Menu: [
+          {
+            id: 31,
+            label: "Data Warehouse Modernization",
+            link: "/#data-warehouse-modernization",
+          },
+          {
+            id: 32,
+            label: "Real Time Analytics",
+            link: "/real-time-analytics",
+          },
+          {
+            id: 33,
+            label: "Data Governance & Observability",
+            link: "/data-governance-observability",
+          },
+          {
+            id: 34,
+            label: "Unique MDM Implementation",
+            link: "/unique-mdm-implementation",
+          },
+        ],
       },
-      {
-        id: 10,
-        label: "Software Development",
-        link: "/software-development",
-      },
-      // {
-      //   id: 11,
-      //   label: "Cloud Transformation",
-      //   link: "/cloud-transformation",
-      //   hasDropdown: true,
-      //   subMenu: [
-      //     {
-      //       id: 8,
-      //       // id: 31,
-      //       label: "Software",
-      //       link: "/service-2",
-      //     },
-      //   ],
-      // },
       {
         id: 12,
-        label: "Technology Consulting",
-        link: "/Technology-consulting",
+        label: "Cyber Security",
+        link: "/cyber-security",
+        hasDropdown: true,
+        sub_Menu: [
+          {
+            id: 35,
+            label: "Infrastructure Risk Assessment",
+            link: "/infrastructure-risk-assessment",
+          },
+          {
+            id: 36,
+            label: "Application Risk Assessment",
+            link: "/application-risk-assessment",
+          },
+          {
+            id: 37,
+            label: "Cloud Risk Assessment",
+            link: "/cloud-risk-assessment",
+          },
+          {
+            id: 38,
+            label: "Managed Security Services",
+            link: "/managed-security-services",
+          },
+        ],
       },
-      // {id: 30,
-      //   label: "Service Details",
-      //   link: "/service-details",
-      // },
+      {
+        id: 13,
+        label: "Cloud Services",
+        link: "#",
+        hasDropdown: true,
+        sub_Menu: [
+          {
+            id: 39,
+            label: "Hybrid Cloud Solution",
+            link: "/hybrid-cloud-solution",
+          },
+          {
+            id: 40,
+            label: "Migration Services",
+            link: "/migration-services",
+          },
+        ],
+      },
+      {
+        id: 14,
+        label: "Integration Services",
+        link: "/integration-services",
+      },
+      {
+        id: 15,
+        label: "Analytics",
+        link: "/analytics",
+        hasDropdown: true,
+        sub_Menu: [
+          {
+            id: 41,
+            label: "Modern Data Analytics",
+            link: "/modern-data-analytics",
+          },
+          {
+            id: 42,
+            label: "AI / ML",
+            link: "/ai-ml",
+          },
+          {
+            id: 43,
+            label: "Process Mining Analytics",
+            link: "/process-mining-analytics",
+          },
+        ],
+      },
+      {
+        id: 16,
+        label: "App Services",
+        link: "/app-service",
+      },
+      {
+        id: 17,
+        label: "IT Services",
+        link: "/it-service",
+      },
+      {
+        id: 30,
+        label: "Management Service",
+        link: "/management-service",
+        hasDropdown: true,
+        sub_Menu: [
+          {
+            id: 41,
+            label: "Modern Data Analytics",
+            link: "/modern-data-analytics",
+          },
+          {
+            id: 42,
+            label: "AI / ML",
+            link: "/ai-ml",
+          },
+          {
+            id: 43,
+            label: "Process Mining Analytics",
+            link: "/process-mining-analytics",
+          },
+        ],
+      },
     ],
   },
   {
     id: 4,
-    label: "Our Product",
-    // label: "Blog",
-    link: "/product",
-    // link: "/blog",
+    label: "Clients & Partners",
+    link: "/clients-partners",
     hasDropdown: false,
-    // hasDropdown: true,
-    // subMenu: [
-    //   {
-    //     id: 13,
-    //     label: "Blog",
-    //     link: "/blog",
-    //   },
-    //   {
-    //     id: 14,
-    //     label: "Blog details",
-    //     link: "/blog-details",
-    //   },
-    // ],
   },
   {
     id: 5,
     label: "Careers",
-    // label: "Pages",
     link: "/career",
     hasDropdown: false,
-    // hasDropdown: true,
-    // subMenu: [
-    //   {
-    //     id: 15,
-    //     label: "Case One",
-    //     link: "/case-1",
-    //   },
-    //   {
-    //     id: 16,
-    //     label: "Case Two",
-    //     link: "/case-2",
-    //   },
-    //   {
-    //     id: 17,
-    //     label: "Case Three",
-    //     link: "/case-3",
-    //   },
-    //   {
-    //     id: 18,
-    //     label: "Case Details",
-    //     link: "/case-details",
-    //   },
-    //   {
-    //     id: 19,
-    //     label: "Career",
-    //     link: "/career",
-    //   },
-    //   {
-    //     id: 21,
-    //     label: "Faq",
-    //     link: "/faq",
-    //   },
-    //   {
-    //     id: 22,
-    //     label: "Goals",
-    //     link: "/goals",
-    //   },
-    //   {
-    //     id: 23,
-    //     label: "Price",
-    //     link: "/price",
-    //   },
-    //   {
-    //     id: 24,
-    //     label: "Team",
-    //     link: "/team",
-    //   },
-    //   {
-    //     id: 25,
-    //     label: "Team Details",
-    //     link: "/team-details",
-    //   },
-    //   {
-    //     id: 26,
-    //     label: "Shop",
-    //     link: "/shop",
-    //   },
-    //   {
-    //     id: 27,
-    //     label: "Contact",
-    //     link: "/contact",
-    //   },
-    //   {
-    //     id: 28,
-    //     label: "Login",
-    //     link: "/login",
-    //   },
-    //   {
-    //     id: 29,
-    //     label: "Register",
-    //     link: "/register",
-    //   },
-    // ],
   },
-  { id: 6, hasDropdown: false, label: "Contact Us", link: "/contact" },
+  {
+    id: 6,
+    label: "Contact Us",
+    link: "/contact",
+    hasDropdown: false,
+  },
 ];
 
 export default navMenuData;

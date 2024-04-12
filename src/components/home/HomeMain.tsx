@@ -21,17 +21,17 @@ const HomeMain = () => {
            {/* <SliderDefault/> */}
            {/* <ChoseArea /> */}
            <About/>
-           <Service/>
            <Team/>
+           <Service/>
            <CounterDefault1 />
-           {/* <Cta/> */}
-           <Project/>
-           {/* <Testimonial/> */}
-           <CounterDefault/>
            <Video/>
            <Contact/>
+           {/* <Cta/> */}
+           {/* <Project/> */}
+           {/* <Testimonial/> */}
+           {/* <CounterDefault/> */}
            {/* <BlogGrid/> */}
-           <Brand/>
+           {/* <Brand/> */}
            {/* <Newsletter/> */}
         </>
     );

@@ -12,14 +12,14 @@ const AboutMain = () => {
   return (
     <>
       <Breadcrumb pageTitle="About Us" />
-      <AboutArea />
+      {/* <AboutArea /> */}
       {/* <AboutService /> */}
       <ChoseArea />
       <AboutService />
       {/* <Team /> */}
       <CtaTwo/>
       {/* <ClientSection /> */}
-      <Brand />
+      {/* <Brand /> */}
     </>
   );
 };
