@@ -109,7 +109,11 @@ const Contact = () => {
                             <div className="col-xl-6 col-lg-6 offset-lg-3 offset-xl-3">
                                 <div className="section-title section-title-white text-center ml-50 mr-50 mb-75">
                                     <span className="border-left-1"></span>
+<<<<<<< HEAD
                                     <span>Get in Touch</span>
+=======
+                                    <span>contact us</span>
+>>>>>>> a32ba11 (first commit)
                                     <span className="border-right-1"></span>
                                 </div>
                             </div>
